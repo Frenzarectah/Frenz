@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'televideo';
+    src: url('../src/fonts/Televideo.ttf') format('truetype');;
+}
+html{
+    font-family:"televideo";
+}
