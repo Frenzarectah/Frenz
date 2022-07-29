@@ -585,6 +585,10 @@ video {
   height: fit-content;
 }
 
+.h-\[40vh\] {
+  height: 40vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -634,6 +638,11 @@ video {
 .bg-\[\#0000ff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ff0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -755,7 +764,7 @@ html{
 
   to{
     opacity:1;
-    height:40vh;
+    height:30vh;
   }
 }
 
@@ -767,15 +776,45 @@ html{
 
   to{
     opacity:1;
-    height:40vh;
+    height:30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @-webkit-keyframes lating1 {
+    from{
+      opacity:0;
+      height:0px;
+    }
+
+    to{
+      opacity:1;
+      height:47vh;
+    }
+  }
+  @keyframes lating1 {
+    from{
+      opacity:0;
+      height:0px;
+    }
+
+    to{
+      opacity:1;
+      height:47vh;
+    }
   }
 }
 
 .lat1{
   -webkit-animation: lating1 2s forwards;
           animation: lating1 2s forwards;
-  -webkit-animation-delay:2s;
-          animation-delay:2s;
+  -webkit-animation-delay:2.5s;
+          animation-delay:2.5s;
+}
+
+.lat1_nodelay{
+  -webkit-animation: lating1 1s forwards;
+          animation: lating1 1s forwards;
 }
 
 li:hover{
