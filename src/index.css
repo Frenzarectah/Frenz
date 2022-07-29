@@ -9,3 +9,38 @@
 html{
     font-family:"televideo";
 }
+@keyframes longing {
+    from{width:10%}
+    to{width:100%}
+  }
+.long{
+    animation:longing 2s forwards;
+    animation-delay:0s;
+}
+@keyframes lating{
+    from{
+        opacity:0;
+        height:0px;}
+    to{
+        opacity:1;
+        height:150px;}
+}
+.lat{
+    animation: lating 2s forwards;
+    animation-delay:2s;
+}
+@keyframes lating1{
+    from{
+        opacity:0;
+        height:0px;}
+    to{
+        opacity:1;
+        height:40vh;}
+}
+.lat1{
+    animation: lating1 2s forwards;
+    animation-delay:2s;
+}
+li:hover{
+    color:black;
+}

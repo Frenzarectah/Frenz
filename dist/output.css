@@ -566,19 +566,8 @@ video {
   top: -20px;
 }
 
-.-top-\[10px\] {
-  top: -10px;
-}
-
-.-top-\[15px\] {
-  top: -15px;
-}
-
-.-mt-\[20px\] {
-  margin-top: -20px;
-}
-
-.mb-\[20px\] {
+.my-\[20px\] {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -596,12 +585,40 @@ video {
   height: fit-content;
 }
 
-.w-3\/4 {
-  width: 75%;
+.w-full {
+  width: 100%;
+}
+
+.w-\[25vw\] {
+  width: 25vw;
+}
+
+.w-\[55vw\] {
+  width: 55vw;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .bg-black {
@@ -614,23 +631,23 @@ video {
   background-color: rgb(255 255 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#0000ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 255 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .pt-\[60px\] {
   padding-top: 60px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -638,9 +655,28 @@ video {
   line-height: 2.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 @font-face {
@@ -653,26 +689,119 @@ html{
   font-family:"televideo";
 }
 
+@-webkit-keyframes longing {
+  from{
+    width:10%
+  }
+
+  to{
+    width:100%
+  }
+}
+
+@keyframes longing {
+  from{
+    width:10%
+  }
+
+  to{
+    width:100%
+  }
+}
+
+.long{
+  -webkit-animation:longing 2s forwards;
+          animation:longing 2s forwards;
+  -webkit-animation-delay:0s;
+          animation-delay:0s;
+}
+
+@-webkit-keyframes lating{
+  from{
+    opacity:0;
+    height:0px;
+  }
+
+  to{
+    opacity:1;
+    height:150px;
+  }
+}
+
+@keyframes lating{
+  from{
+    opacity:0;
+    height:0px;
+  }
+
+  to{
+    opacity:1;
+    height:150px;
+  }
+}
+
+.lat{
+  -webkit-animation: lating 2s forwards;
+          animation: lating 2s forwards;
+  -webkit-animation-delay:2s;
+          animation-delay:2s;
+}
+
+@-webkit-keyframes lating1{
+  from{
+    opacity:0;
+    height:0px;
+  }
+
+  to{
+    opacity:1;
+    height:40vh;
+  }
+}
+
+@keyframes lating1{
+  from{
+    opacity:0;
+    height:0px;
+  }
+
+  to{
+    opacity:1;
+    height:40vh;
+  }
+}
+
+.lat1{
+  -webkit-animation: lating1 2s forwards;
+          animation: lating1 2s forwards;
+  -webkit-animation-delay:2s;
+          animation-delay:2s;
+}
+
+li:hover{
+  color:black;
+}
+
 @media (min-width: 768px) {
-  .md\:-top-\[20px\] {
-    top: -20px;
-  }
-
-  .md\:-top-\[15px\] {
-    top: -15px;
-  }
-
   .md\:-top-\[25px\] {
     top: -25px;
+  }
+
+  .md\:w-\[15vw\] {
+    width: 15vw;
+  }
+
+  .md\:w-\[80vw\] {
+    width: 80vw;
   }
 
   .md\:pt-\[40px\] {
     padding-top: 40px;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-3xl {
@@ -680,8 +809,8 @@ html{
     line-height: 2.25rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
