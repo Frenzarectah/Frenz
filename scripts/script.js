@@ -1,4 +1,4 @@
-const fadeInContact=()=>{
-    const contact_box = document.getElementById("contact_box");
-    contact_box.classList.toggle("lat1_nodelay");
+const fadeIn=(link_type)=>{
+    const box = document.getElementById(link_type);
+    box.classList.toggle("lat1_nodelay");
 }

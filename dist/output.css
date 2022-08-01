@@ -558,6 +558,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -566,13 +570,26 @@ video {
   top: -20px;
 }
 
+.float-right {
+  float: right;
+}
+
 .float-left {
   float: left;
+}
+
+.m-\[10px\] {
+  margin: 10px;
 }
 
 .my-\[20px\] {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.my-\[10px\] {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .mr-\[20px\] {
@@ -672,6 +689,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#ff0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.p-\[5px\] {
+  padding: 5px;
+}
+
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
@@ -696,6 +722,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -704,6 +735,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#ffffff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -717,6 +753,7 @@ video {
 }
 
 html{
+  scroll-behavior:smooth;
   font-family:"televideo";
 }
 
@@ -846,10 +883,31 @@ img{
           animation-delay:2.5s;
 }
 
+.lat3s{
+  -webkit-animation: lating1 2s forwards;
+          animation: lating1 2s forwards;
+  -webkit-animation-delay:3s;
+          animation-delay:3s;
+}
+
+.lat4s{
+  -webkit-animation: lating1 2s forwards;
+          animation: lating1 2s forwards;
+  -webkit-animation-delay:4s;
+          animation-delay:4s;
+}
+
 .lat1_nodelay{
   display:block;
   -webkit-animation: lating1 1s forwards;
           animation: lating1 1s forwards;
+}
+
+.lat6s{
+  -webkit-animation: lating1 2s forwards;
+          animation: lating1 2s forwards;
+  -webkit-animation-delay:6s;
+          animation-delay:6s;
 }
 
 li:hover{
