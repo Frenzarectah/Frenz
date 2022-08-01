@@ -566,13 +566,25 @@ video {
   top: -20px;
 }
 
+.float-left {
+  float: left;
+}
+
 .my-\[20px\] {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+.mr-\[20px\] {
+  margin-right: 20px;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-full {
@@ -585,20 +597,26 @@ video {
   height: fit-content;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
+.h-0 {
+  height: 0px;
+}
+
+.min-h-fit {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-\[25vw\] {
-  width: 25vw;
+.w-2\/5 {
+  width: 40%;
 }
 
-.w-\[55vw\] {
-  width: 55vw;
+.w-3\/5 {
+  width: 60%;
 }
 
 .list-none {
@@ -615,6 +633,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -640,9 +662,9 @@ video {
   background-color: rgb(0 0 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#ff0000\] {
+.bg-\[\#cf090a\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(207 9 10 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -698,6 +720,18 @@ html{
   font-family:"televideo";
 }
 
+img{
+  width:64px;
+  height:64px;
+}
+
+@media screen and (max-width: 600px) {
+  img{
+    width:40px;
+    height:40px;
+  }
+}
+
 @-webkit-keyframes longing {
   from{
     width:10%
@@ -733,7 +767,7 @@ html{
 
   to{
     opacity:1;
-    height:150px;
+    height:140px;
   }
 }
 
@@ -745,7 +779,7 @@ html{
 
   to{
     opacity:1;
-    height:150px;
+    height:140px;
   }
 }
 
@@ -764,7 +798,7 @@ html{
 
   to{
     opacity:1;
-    height:30vh;
+    height:40vh;
   }
 }
 
@@ -776,7 +810,7 @@ html{
 
   to{
     opacity:1;
-    height:30vh;
+    height:40vh;
   }
 }
 
@@ -789,7 +823,7 @@ html{
 
     to{
       opacity:1;
-      height:47vh;
+      height:50vh;
     }
   }
   @keyframes lating1 {
@@ -800,7 +834,7 @@ html{
 
     to{
       opacity:1;
-      height:47vh;
+      height:50vh;
     }
   }
 }
@@ -813,6 +847,7 @@ html{
 }
 
 .lat1_nodelay{
+  display:block;
   -webkit-animation: lating1 1s forwards;
           animation: lating1 1s forwards;
 }
@@ -826,12 +861,12 @@ li:hover{
     top: -25px;
   }
 
-  .md\:w-\[15vw\] {
-    width: 15vw;
+  .md\:w-1\/5 {
+    width: 20%;
   }
 
-  .md\:w-\[80vw\] {
-    width: 80vw;
+  .md\:w-4\/5 {
+    width: 80%;
   }
 
   .md\:pt-\[40px\] {

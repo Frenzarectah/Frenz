@@ -9,6 +9,16 @@
 html{
     font-family:"televideo";
 }
+img{
+    width:64px;
+    height:64px;
+}
+@media screen and (max-width: 600px) {
+img{
+    width:40px;
+    height:40px;
+}
+}
 @keyframes longing {
     from{width:10%}
     to{width:100%}
@@ -23,7 +33,7 @@ html{
         height:0px;}
     to{
         opacity:1;
-        height:150px;}
+        height:140px;}
 }
 .lat{
     animation: lating 2s forwards;
@@ -35,7 +45,7 @@ html{
         height:0px;}
     to{
         opacity:1;
-        height:30vh;}
+        height:40vh;}
 }
 @media screen and (max-width: 600px) {
     @keyframes lating1 {
@@ -44,7 +54,7 @@ html{
             height:0px;}
         to{
             opacity:1;
-            height:47vh;}
+            height:50vh;}
     }
 }
 .lat1{
@@ -52,6 +62,7 @@ html{
     animation-delay:2.5s;
 }
 .lat1_nodelay{
+    display:block;
     animation: lating1 1s forwards;
 }
 li:hover{
