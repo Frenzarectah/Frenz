@@ -1,0 +1,13 @@
+@import 'animate.css';
+
+$primary-color: yellow;
+$background-color:#000;
+
+@font-face {
+  font-family:'Erica' ;
+  src: url('/assets/EricaOne.ttf');
+}
+header{
+  font-family: 'Erica';
+  color: $primary-color;
+}
