@@ -1,5 +1,5 @@
-import React from "react";
-import '/tomorrow/Frenz/src/App.scss';
+import React from "react"
+import '../../App.scss';
 
 const Layout = ()=>{
     return(

@@ -1,14 +1,14 @@
 import './App.scss';
 import Layout from './components/Layout/Layout';
-import { Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
+import ButtonSet from './components/ButtonSet/ButtonSet';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Layout/>
-      </header>
-    </div>
+    <Routes>
+    <Route path="/" element={<Layout/>}/>
+    <Route path="/bottoni" element={<ButtonSet/>}/>
+    </Routes>
   );
 }
 

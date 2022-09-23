@@ -5,9 +5,9 @@ $background-color:#000;
 
 @font-face {
   font-family:'Erica' ;
-  src: url('/assets/EricaOne.ttf');
+  src: url('/assets/EricaOne.ttf') format('ttf');
 }
-header{
+.main_container{
   font-family: 'Erica';
-  color: $primary-color;
+  background-color: violet;
 }
