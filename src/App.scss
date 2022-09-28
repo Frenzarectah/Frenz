@@ -1,13 +1,43 @@
 @import 'animate.css';
 
-$primary-color: yellow;
-$background-color:#000;
+$primary-color: white;
 
 @font-face {
   font-family:'Erica' ;
   src: url('/assets/EricaOne.ttf') format('ttf');
 }
-.main_container{
+body{
   font-family: 'Erica';
-  background-color: violet;
+  background-image: url('./assets/bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.main_container{
+  width:98%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: space-between;
+  //align-items: center;
+  
+}
+#button__line__top{
+  width:98%;
+  padding:0px 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#button__line__bottom{
+  width:98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.homepage{
+  height:80vh;
 }
