@@ -23,7 +23,7 @@ const Button = (props)=>{
 }
 
 Button.defaultProps={
-    "width":"120px",
+    "width":"140px",
     "height":"50px",
     "font":"Sans-serif"
 }
