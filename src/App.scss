@@ -2,13 +2,9 @@
 
 $primary-color: white;
 
-@font-face {
-  font-family:'Erica' ;
-  src: url('/assets/EricaOne.ttf') format('ttf');
-}
 body{
-  font-family: 'Erica';
-  background-image: url('./assets/bg2.jpg');
+  //background-image: url('./assets/bg1.png');
+  background-color:yellow;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,18 +12,14 @@ body{
 }
 .main_container{
   width:98%;
-  height:100%;
+  height:95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  //justify-content: space-between;
-  //align-items: center;
-  
 }
 #button__line__top{
   width:98%;
   padding:0px 15px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,6 +30,6 @@ body{
   flex-direction: row;
   justify-content: space-between;
 }
-.homepage{
-  height:80vh;
+.btn:hover{
+  width:400px;
 }
