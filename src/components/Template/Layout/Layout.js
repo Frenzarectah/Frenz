@@ -16,7 +16,7 @@ const Layout = ()=>{
         <div className="main_container">
             <div id="button__line__top">
                 <Button color="black" bkgColor="blue" caption={iconHome} address="/"/>
-                <Button color="black" bkgColor="red" font="Erica One" caption="About" address="/whoami"/>
+                <Button color="black" bkgColor="red" font="Erica One" caption="About" address=""/>
             </div>
             <Routes>
                 <Route path="/" element={<Homepage/>}/>

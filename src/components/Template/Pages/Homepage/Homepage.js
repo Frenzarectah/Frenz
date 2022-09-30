@@ -4,10 +4,16 @@ import '../../../../App.scss';
 import './Homepage.css';
 
 const Homepage = ()=>{
-    const [cln,setCln] = useState("homepage");
+    const [cln,setCln] = useState(" title ");
+    
+    setTimeout(()=>setCln(" appear "+cln),1000);
+    
     return(
-        <div className={cln}>
-                lascia che io sia!
+        <div className="homepage">
+            <span style={{fontSize:"25px"}}>Introducing myself..</span>
+            <div className={cln}>
+                FRENZ SORRENTINO
+            </div>
         </div>
     )
 }

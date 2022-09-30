@@ -30,6 +30,9 @@ body{
   flex-direction: row;
   justify-content: space-between;
 }
-.btn:hover{
-  width:400px;
+.btn{
+  transition:width 2s !important;
+}
+.anima{
+  width:200px !important;
 }
