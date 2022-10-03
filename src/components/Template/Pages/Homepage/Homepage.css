@@ -1,21 +1,32 @@
+@keyframes scrollText {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
 .homepage{
     display:flex;
+    border:1px black solid;
+    font-family:'Erica One';
+    color:black;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     height:80vh;
   }
-.title{
-  position:relative;
-  font-size:90px;
-  opacity:0;
-  font-family:'Erica One';
-  left:-500px;
-  transition:opacity 1s, left 3s;
+.roll__text{
+  width: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.appear{
-  position:relative;
-  opacity:1;
-  left:0;
+.roll__text > p{
+  font-size:110px;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 20s linear infinite;
+}
+.subtitle{
+  display:flex;
+  justify-self:start;
 }
   

@@ -2,18 +2,18 @@ import React from "react";
 import { useState } from "react";
 import '../../../../App.scss';
 import './Homepage.css';
+import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Homepage = ()=>{
-    const [cln,setCln] = useState(" title ");
-    
-    setTimeout(()=>setCln(" appear "+cln),1000);
+    const iconStar = <FontAwesomeIcon icon={faAsterisk} color="black"/>
     
     return(
         <div className="homepage">
-            <span style={{fontSize:"25px"}}>Introducing myself..</span>
-            <div className={cln}>
-                FRENZ SORRENTINO
+            <div className="roll__text">
+                <p>FRENZ {iconStar} SORRENTINO</p>
             </div>
+            <p className="subtitle">Passionate and Self-taught FrontEnd Developer </p>
         </div>
     )
 }
