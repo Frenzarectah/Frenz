@@ -29,4 +29,11 @@
   display:flex;
   justify-self:start;
 }
-  
+.logo__face{
+  width:200px;
+  height:auto;
+  position:absolute;
+  top:35%;
+  left:10px;
+  z-index:10;
+}

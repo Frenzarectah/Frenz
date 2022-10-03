@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import '../../../../App.scss';
 import './Homepage.css';
+import logo from '../../../../assets/mi.gif';
 import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -10,10 +10,11 @@ const Homepage = ()=>{
     
     return(
         <div className="homepage">
+            <img className="logo__face" src={logo}/>
             <div className="roll__text">
                 <p>FRENZ {iconStar} SORRENTINO</p>
             </div>
-            <p className="subtitle">Passionate and Self-taught FrontEnd Developer </p>
+            <p className="subtitle animated bounceInDown">Passionate and Self-taught FrontEnd Developer </p>
         </div>
     )
 }
