@@ -2,15 +2,14 @@
   0%   { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); }
 }
+@keyframes animateFace {
+  100% {transform: rotateY(180deg); }
+}
 
 .homepage{
-    display:flex;
     border:1px black solid;
     font-family:'Erica One';
     color:black;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
     height:80vh;
   }
 .roll__text{
@@ -19,21 +18,19 @@
   overflow: hidden;
   box-sizing: border-box;
 }
-.roll__text > p{
-  font-size:110px;
+.roll__text > span{
+  font-size:15em;
   display: inline-block;
   padding-left: 100%;
+  padding-right: 100%;
   animation: scrollText 20s linear infinite;
 }
-.subtitle{
-  display:flex;
-  justify-self:start;
-}
-.logo__face{
+/*.logo__face{
   width:200px;
   height:auto;
   position:absolute;
   top:35%;
   left:10px;
   z-index:10;
-}
+  animation: animateFace 2s linear infinite;
+}*/
