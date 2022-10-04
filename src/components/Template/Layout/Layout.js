@@ -1,4 +1,4 @@
-import React from "react"
+import {React,useState} from "react"
 import '../../../App.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger, faHome } from "@fortawesome/free-solid-svg-icons";
@@ -9,14 +9,25 @@ import Contact from "../Pages/Contact/Contact";
 import Projects from "../Pages/Projects/Projects";
 import Blog from "../Pages/Blog/Blog";
 import About from "../Pages/About/About";
+import MobileMenu from "../../MobileMenu/MobileMenu";
 
 const Layout = ()=>{
+    const [tick,setTick] = useState(0);
+    const [visible,setVisible] = useState(false);
 
+    setTimeout(()=>setTick(10),3000);
+    setTimeout(()=>setTick(-10),1000);
+
+    
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
-    const hambMenu = <FontAwesomeIcon icon={faHamburger} color="black" size="3x"/>
+    const hambMenu = <FontAwesomeIcon icon={faHamburger} color="black" size="3x" transform={{ rotate: tick }}/>
+    
     return(
         <div className="main_container">
-            <div className="menu__mobile">{hambMenu}</div>
+            <div className="menu__mobile" onClick={()=>setVisible(!visible)}>
+                {hambMenu} 
+                <MobileMenu visible={visible}/>
+            </div>
             <div id="button__line__top">
                 <Button color="black" bkgColor="blue" caption={iconHome} address="/"/>
                 <Button color="black" bkgColor="red" font="Erica One" caption="About" address=""/>
