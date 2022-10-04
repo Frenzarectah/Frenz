@@ -30,3 +30,17 @@ body{
   flex-direction: row;
   justify-content: space-between;
 }
+.menu__mobile{
+  display:none;
+}
+
+
+@media only screen and (max-width: 600px) {
+.menu__mobile{
+  padding:10px;
+  display:block;
+  position:absolute;
+  right:0;
+  top:0;
+}
+}

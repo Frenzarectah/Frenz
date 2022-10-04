@@ -18,7 +18,7 @@ const Button = (props)=>{
     }
     return(
         <Link to={address}>
-            <button style={style}>
+            <button className="btn" style={style}>
                 {props.caption}
             </button>
         </Link>
