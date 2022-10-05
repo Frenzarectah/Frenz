@@ -1,9 +1,9 @@
 @import 'animate.css';
 
-$primary-color: white;
+$primary-font: "Erica One";
+
 
 body{
-  //background-image: url('./assets/bg1.png');
   background-color:yellow;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,6 +32,9 @@ body{
 }
 .menu__mobile{
   display:none;
+}
+.title{
+  font-family: $primary-font;
 }
 
 
