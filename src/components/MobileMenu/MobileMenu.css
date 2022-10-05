@@ -4,6 +4,7 @@
     position:absolute;
     top:0;
     right:0;
+    color:yellow;
     box-sizing: border-box;
     background-color:rgba(0,0,0,1);
     transition:width 1s,display 1s;
@@ -13,6 +14,7 @@
     width:50vw;
 }
 ul{
+    width:inherit;
     margin-top:10px;
     display:flex;
     flex-direction:column;
@@ -24,6 +26,6 @@ ul{
     text-decoration:none;
 }
 .actual{
-    color:white;
+    background-color:yellow;
     text-decoration:none;
 }
