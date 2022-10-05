@@ -1,0 +1,16 @@
+.about{
+    height:80vh;
+    font-family:"Oswald";
+    display:flex;
+    flex-direction:row;
+}
+.about__photo{
+    width:200px;
+    height:200px;
+    background-image:url('./mi.png');
+    background-size:contain;
+    transition: background-image 4s;
+}
+.about__photo:hover{
+    background-image:url('./mi_deformed.png');
+}
