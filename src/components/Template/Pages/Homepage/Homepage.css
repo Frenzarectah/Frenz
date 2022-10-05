@@ -25,7 +25,9 @@
   animation: scrollText 20s linear infinite;
 }
 .subtitle{
+  font-family:"Newsreader";
   display:flex;
+  font-weight:bold;
   font-size:1.5vw;
   flex-direction:row;
   justify-content:center;
@@ -44,8 +46,11 @@
 @media only screen and (max-width: 600px) {
 
 .subtitle{
+    font-family:"Newsreader";
+    padding:20px;
+    text-align:center;
     display:flex;
-    font-size:7vw;
+    font-size:6vw;
     flex-direction:column;
     justify-content:center;
     align-items:center;

@@ -1,7 +1,6 @@
 import React from "react";
 import '../../../../App.scss';
 import './Homepage.css';
-import logo from '../../../../assets/mi_lined.png';
 import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,9 +14,8 @@ const Homepage = ()=>{
                 <span>FRENZ {iconAsterisk} SORRENTINO</span>
             </div>
             <div className="subtitle">
-                <span>FRONTEND DEVELOPER  {iconStar}</span>  
-                <span>STREAMER  {iconStar}</span>  
-                <span>LEGO ADDICTED {iconStar}</span> 
+                <span>"Talented, Brilliant, Incredible and Amazing <s>FRONTEND DEVELOPER</s> liar"</span>
+                <span>-New York Times</span>
             </div>
         </div>
         

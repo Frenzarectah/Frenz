@@ -32,7 +32,7 @@ const Layout = ()=>{
             </div>
             <div id="button__line__top">
                 <Button color="black" bkgColor="blue" caption={iconHome} address="/"/>
-                <Button color="black" bkgColor="red" font="Erica One" caption="About" address=""/>
+                <Button color="black" bkgColor="red" font="Erica One" caption="About" address="/whoami"/>
             </div>
             <Routes>
                 <Route path="/" element={<Homepage/>}/>
