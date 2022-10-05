@@ -20,13 +20,15 @@ const Layout = ()=>{
 
     
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
-    const hambMenu = <FontAwesomeIcon icon={faHamburger} color="black" size="3x" transform={{ rotate: tick }}/>
+    const hambMenu = (col)=> 
+       <FontAwesomeIcon icon={faHamburger} color={col} size="3x" transform={{ rotate: tick }}/>
     
     return(
+        <>
+        <MobileMenu visible={visible}/>
         <div className="main_container">
             <div className="menu__mobile" onClick={()=>setVisible(!visible)}>
-                {hambMenu} 
-                <MobileMenu visible={visible}/>
+                {hambMenu(visible?"white":"black")}
             </div>
             <div id="button__line__top">
                 <Button color="black" bkgColor="blue" caption={iconHome} address="/"/>
@@ -45,6 +47,7 @@ const Layout = ()=>{
                 <Button color="black" bkgColor="transparent" border="3px solid black" font="Rubik Dirt" caption="Contact" address="/contact"/>
             </div>
         </div>
+        </>
     )
 }
 export default Layout;

@@ -1,22 +1,29 @@
 .menu__container{
-    width:100vw;
+    width:0vw;
     height:100vh;
-    position:relative;
-    top:50%;
-    background-color:rgba(0,0,0,0.8);
-    transition:width 1s linear;
+    position:absolute;
+    top:0;
+    right:0;
+    box-sizing: border-box;
+    background-color:rgba(0,0,0,1);
+    transition:width 1s,display 1s;
+    z-index:5;
+}
+.entering{
+    width:50vw;
 }
 ul{
+    margin-top:10px;
     display:flex;
     flex-direction:column;
-    align-items:center;
-    font-size:24px;
-    color:black;
+    font-size:35px;
     list-style-type:none;
 }
-.actual{
-    color:black;
+.link{
+    color:white;
+    text-decoration:none;
 }
-.actual::before{
-    content:">";
+.actual{
+    color:white;
+    text-decoration:none;
 }
