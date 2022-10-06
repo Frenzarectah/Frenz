@@ -36,10 +36,10 @@
     display:flex;
     background-position:center;
     width:85vw;
-    height:35vh;
+    height:37vh;
 }
 .about__descr{
-    padding:10px; 
+    padding:0 10px; 
     font-size:12px;
 }
 }
