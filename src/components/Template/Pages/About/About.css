@@ -1,16 +1,45 @@
 .about{
+    padding:20px;
     height:80vh;
     font-family:"Oswald";
+    font-size: 20px;
+    font-weight:bold;
     display:flex;
     flex-direction:row;
 }
 .about__photo{
-    width:200px;
-    height:200px;
-    background-image:url('./mi.png');
-    background-size:contain;
+    width:450px;
+    height:400px;
+    background-image:url('./mi_star.png');
+    background-size:cover;
     transition: background-image 4s;
 }
-.about__photo:hover{
-    background-image:url('./mi_deformed.png');
+.about__descr{
+    border:8px solid black;
+    border-radius:10px;
+    font-size:20px;
+    background:white;
+    width:65%;
+    padding:10px;
+}
+
+@media only screen and (max-width: 600px) {
+.about{
+    height:100vh;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column-reverse;
+}
+.about__photo{
+    display:flex;
+    background-position:center;
+    width:85vw;
+    height:35vh;
+}
+.about__descr{
+    padding:10px; 
+    font-size:15px;
+}
 }

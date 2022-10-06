@@ -27,7 +27,7 @@ const Layout = ()=>{
         <>
         <MobileMenu visible={visible}/>
         <div className="main_container">
-            <div className="menu__mobile" onClick={()=>setVisible(!visible)}>
+            <div className="menu__mobile animate__animated animate__swing" onClick={()=>setVisible(!visible)}>
                 {hambMenu(visible?"white":"black")}
             </div>
             <div id="button__line__top">
