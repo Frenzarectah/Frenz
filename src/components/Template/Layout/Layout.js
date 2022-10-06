@@ -12,22 +12,17 @@ import About from "../Pages/About/About";
 import MobileMenu from "../../MobileMenu/MobileMenu";
 
 const Layout = ()=>{
-    const [tick,setTick] = useState(0);
     const [visible,setVisible] = useState(false);
-
-    setTimeout(()=>setTick(10),3000);
-    setTimeout(()=>setTick(-10),1000);
-
     
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
     const hambMenu = (col)=> 
-       <FontAwesomeIcon icon={faHamburger} color={col} size="3x" transform={{ rotate: tick }}/>
+       <FontAwesomeIcon icon={faHamburger} color={col} size="3x"/>
     
     return(
         <>
         <MobileMenu visible={visible}/>
         <div className="main_container">
-            <div className="menu__mobile animate__animated animate__swing" onClick={()=>setVisible(!visible)}>
+            <div className="menu__mobile animate__animated animate__shakeX animate__delay-2s" onClick={()=>setVisible(!visible)}>
                 {hambMenu(visible?"white":"black")}
             </div>
             <div id="button__line__top">
