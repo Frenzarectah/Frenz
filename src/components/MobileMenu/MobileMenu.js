@@ -14,9 +14,9 @@ const MobileMenu = (props)=>{
                 <ul>    
                     <li><NavLink exact="true" className="link" to="/">home</NavLink></li>
                     <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/whoami" onClick={()=>setView(!view)}>about</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/projects">projects</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/contact">contacts</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/blog">blog</NavLink></li>
+                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/projects" onClick={()=>setView(!view)}>projects</NavLink></li>
+                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/contact" onClick={()=>setView(!view)}>contacts</NavLink></li>
+                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/blog" onClick={()=>setView(!view)}>blog</NavLink></li>
                 </ul>
             </nav>
     )}
