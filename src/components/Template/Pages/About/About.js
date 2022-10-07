@@ -9,7 +9,7 @@ const About = () =>{
                     Born in '87 in the famous south-italy city called Bari, became interested in Programming
                     since he was 15y old.
                     When he finished school in computer science, in 2006, he tried to enter in the Web World but
-                    unfortunately with bad results.<br/>In 2020 he rolled up his sleeves and restart to learn about the
+                    unfortunately with bad results.<br/>In 2020 he rolled up his sleeves and restarts to learn about the
                     thousands shades of FrontEnd Development, from HTML/CSS basis to the popular Javascript library called 
                     React.js and sperimenting style frameworks as Bootstrap and TailwindCss (this last is his fav :)
                 </p>
@@ -18,7 +18,7 @@ const About = () =>{
                     of his knowledge follows this concept.
                 </p>
                 <p>
-                    He hopes to be hired by a wideopen-minded company which take care about his people and focused on continuos training
+                    He hopes to be hired by a wideopen-minded company which takes care about his people and focusing on continuos training
                     and gives the possibility to grow togheter. 
                 </p>
             </div>
