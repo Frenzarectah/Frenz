@@ -1,15 +1,27 @@
+#image_container{
+    background-image:url('../About/mi_star.png');
+    width:30%;
+    height:80vh;
+}
 .contact{
     display:flex;
-    width:100%;
+    width:85%;
     height:80vh;
-    flex-direction:column;
+    border:1px solid black;
+    flex-direction:row;
     justify-content:flex-start;
     align-items:center;
     font-weight:bold;
     font-family:"Oswald";
 }
 .contact_title{
+    font-family:"Oswald";
     font-size:30px;
+}
+#contact_sect{
+    width:60%;
+    display:flex;
+    border:1px solid black;
 }
 .contact__form{
     display:flex;
@@ -20,7 +32,8 @@
 }
 .contact__form__input{
     background-color:#ffffff;
-    width:50%;
+    width:25%;
+    margin:10px;
     font-family:"Oswald";
     font-size:20px;
     height:50px;
@@ -28,15 +41,35 @@
     border:5px solid black;
     border-radius:10px;
 }
-._email{
+.contact_wrapper{
     width:100%;
+    display:flex;
+    justify-content:center;
+}
+._email{
+    width:50%;
 }
 ._textarea{
-    width:100%;
+    width:50%;
     height:200px;
 }
 ::-webkit-input-placeholder {
     font-size:20px;
     font-weight:bold;
     font-family:"Oswald";
+}
+#social_sect{
+    display:flex;
+    width:20%;
+    border:1px solid white;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:left;
+}
+@media only screen and (max-width: 600px) {
+.contact{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
 }
