@@ -5,11 +5,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Button = (props)=>{
-    const {width,height,color,border,borderColor,bkgColor,font,address,handleClick} = props;
+    const {width,height,color,border,borderColor,bkgColor,font,fontSize,address,handleClick} = props;
     let style = {
         "width":width,
         "height":height,
-        "fontSize":"35px",
+        "fontSize":fontSize,
         "color":color,
         "border":border,
         "borderColor":borderColor,
@@ -29,6 +29,7 @@ Button.defaultProps={
     "width":"170px",
     "height":"80px",
     "font":"Sans-serif",
+    "fontSize":"35px",
     "border":"none"
 }
 export default Button;

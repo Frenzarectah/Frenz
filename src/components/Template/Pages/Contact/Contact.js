@@ -1,4 +1,6 @@
 import React from "react";
+import Button from '../../../Button/Button';
+import '../../../../App.scss';
 import './Contact.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +14,7 @@ const Contact = () =>{
         <>
         <div className="contact_title">Let's get in Touch!</div>
         <div className="contact">
-            <section id="image_container"></section>
+            <section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"></section>
             <section id="contact_sect">
                 <form className="contact__form" name="contact_form_name">
                     <div className="contact_wrapper">
@@ -25,12 +27,13 @@ const Contact = () =>{
                 <div className="contact_wrapper">
                     <textarea name="message" className="contact__form__input _textarea" placeholder="Say something to Frenz" required/>
                 </div>
+                <Button width="100px" height="50px" font="Oswald" fontSize="20px" border="4px black solid" bkgColor="red" caption="send!"/>
             </form>
             </section>
             <section id="social_sect">
-                 <div>{instaIcon}</div>
-                 <div>{gitIcon}</div>
-                 <div>{linkedIcon}</div>
+                 <div className="insta animate__animated animate__heartBeat  animate__delay-1s">{instaIcon}</div>
+                 <div className="git animate__animated animate__heartBeat  animate__delay-2s">{gitIcon}</div>
+                 <div className="linkedin animate__animated animate__heartBeat  animate__delay-3s">{linkedIcon}</div>
             </section>
             </div>
           </>  

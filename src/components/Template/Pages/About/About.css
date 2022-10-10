@@ -12,7 +12,7 @@
     height:370px;
     background-image:url('./mi_star.png');
     background-size:cover;
-    transition: background-image 4s;
+
 }
 .about__descr{
     border:8px solid black;

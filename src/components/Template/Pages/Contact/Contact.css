@@ -1,18 +1,21 @@
 #image_container{
     background-image:url('../Contact/contact_baloon.png');
-    width:30%;
-    height:80vh;
+    width:320px;
+    height:260px;
+    background-size:cover;
+    background-position:left top;
+    z-index:5;
 }
 .contact{
     display:flex;
     width:85%;
     height:80vh;
-    border:1px solid black;
     flex-direction:row;
     justify-content:flex-start;
     align-items:center;
     font-weight:bold;
     font-family:"Oswald";
+    z-index:3;
 }
 .contact_title{
     font-family:"Oswald";
@@ -32,7 +35,7 @@
 }
 .contact__form__input{
     background-color:#ffffff;
-    width:25%;
+    width:40%;
     margin:10px;
     font-family:"Oswald";
     font-size:20px;
@@ -47,11 +50,11 @@
     justify-content:center;
 }
 ._email{
-    width:50%;
+    width:75%;
 }
 ._textarea{
-    width:50%;
-    height:200px;
+    width:75%;
+    height:100px;
 }
 ::-webkit-input-placeholder {
     font-size:20px;
@@ -61,10 +64,27 @@
 #social_sect{
     display:flex;
     width:20%;
+    height:90%;
     border:1px solid white;
     flex-direction:column;
     justify-content:space-between;
     align-items:left;
+}
+.linkedin{
+    position:relative;
+    top:-50px;
+    left:70px;
+}
+
+.git{
+    position:relative;
+    top:30px;
+    left:40px;
+}
+.insta{
+    position:relative;
+    top:110px;
+    left:90px;
 }
 @media only screen and (max-width: 600px) {
 .contact{
