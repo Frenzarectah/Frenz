@@ -14,7 +14,7 @@ const Contact = () =>{
         <>
         <div className="contact_title">Let's get in Touch!</div>
         <div className="contact">
-            <section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"></section>
+            <section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"/>
             <section id="contact_sect">
                 <form className="contact__form" name="contact_form_name">
                     <div className="contact_wrapper">

@@ -87,9 +87,39 @@
     left:90px;
 }
 @media only screen and (max-width: 600px) {
+
+#image_container{
+    margin-bottom:10px;
+    background-position:center;
+    width:100vw;
+    height:70vh;
+}
+#contact_sect{
+    width:100%;
+    height:100vh;
+    justify-content:space-around;
+    border:1px black solid;
+    align-items:center;
+}
 .contact{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+.contact_form{
+    border:1px red solid;
+    height:80vh;
+}
+#social_sect{
     width:100%;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+.insta,.linkedin,.git{
+    position:static;
 }
 }
