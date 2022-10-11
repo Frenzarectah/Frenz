@@ -45,8 +45,7 @@ const Contact = () =>{
                 <div className="contact_wrapper">
                     <textarea name="message" className="contact__form__input _textarea" placeholder="Say something to Frenz" required/>
                 </div>
-                <button type="submit">submitta</button>
-                {/*<Button width="100px" height="50px" font="Oswald" fontSize="20px" border="3px solid black" bkgColor="red" caption="send!" handleClick={()=>sendMail(infoMail)}/>*/}
+                <button type="submit">Send!</button>
             </form>
             </section>
             <section id="social_sect">

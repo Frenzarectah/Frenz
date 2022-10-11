@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Button = (props)=>{
-    const {width,height,color,border,borderColor,bkgColor,font,fontSize,address,handleClick} = props;
+    const {width,height,type,color,border,borderColor,bkgColor,font,fontSize,address,handleClick} = props;
     let style = {
         "width":width,
         "height":height,
@@ -18,7 +18,7 @@ const Button = (props)=>{
     }
     return(
         <Link to={address}>
-            <button className="btn" style={style} onClick={handleClick}>
+            <button type={type} className="btn" style={style} onClick={handleClick}>
                 {props.caption}
             </button>
         </Link>
@@ -28,6 +28,7 @@ const Button = (props)=>{
 Button.defaultProps={
     "width":"170px",
     "height":"80px",
+    "type":"Submit",
     "font":"Sans-serif",
     "fontSize":"35px",
     "border":"none"

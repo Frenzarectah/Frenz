@@ -84,6 +84,13 @@
     top:110px;
     left:90px;
 }
+button{
+    width:100px;
+    height:45px;
+    font-family:'Erica One';
+    border:4px black solid;
+    background-color:#ff0000;
+}
 @media only screen and (max-width: 600px) {
 
 #image_container{
@@ -118,5 +125,11 @@
 }
 .insta,.linkedin,.git{
     position:static;
+}
+button{
+    width:100px;
+    height:70px;
+    border:4px black solid;
+    background-color:#ff0000;
 }
 }
