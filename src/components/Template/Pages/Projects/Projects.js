@@ -2,7 +2,7 @@ import React from "react";
 
 const Project = () =>{
     return(
-        <div>Project</div>
+        <div>WORK IN PROGRESS</div>
     )
 }
 export default Project;

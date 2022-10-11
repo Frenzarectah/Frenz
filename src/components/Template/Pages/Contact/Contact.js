@@ -49,9 +49,9 @@ const Contact = () =>{
             </form>
             </section>
             <section id="social_sect">
-                 <div className="insta animate__animated animate__heartBeat  animate__delay-1s">{instaIcon}</div>
-                 <div className="git animate__animated animate__heartBeat  animate__delay-3s">{gitIcon}</div>
-                 <div className="linkedin animate__animated animate__heartBeat  animate__delay-2s">{linkedIcon}</div>
+                 <div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div>
+                 <div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div>
+                 <div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div>
             </section>
             </div>
           </>  
