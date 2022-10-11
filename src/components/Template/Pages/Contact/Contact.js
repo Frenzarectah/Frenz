@@ -8,6 +8,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Modal from "../../Modals/Modal";
+import contact_image from './contact_baloon.png';
 
 const Contact = () =>{
     const [visible,setVisible] =useState(false);
@@ -31,7 +32,10 @@ const Contact = () =>{
         <Modal visible={visible}/>
         <div className="contact_title">Let's get in Touch!</div>
         <div className="contact">
-            <section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"/>
+            {/*<section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"/>*/}
+            <div id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
+                <img width="300px" src={contact_image}/>
+            </div>
             <section id="contact_sect">
                 <form className="contact__form" ref={referenceForm} onSubmit={sendEmail} name="contact_form_name">
                     <div className="contact_wrapper">
