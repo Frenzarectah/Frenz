@@ -18,7 +18,7 @@ const Button = (props)=>{
     }
     return(
         <Link to={address}>
-            <button className="btn" style={style}>
+            <button className="btn" style={style} onClick={handleClick}>
                 {props.caption}
             </button>
         </Link>

@@ -33,15 +33,6 @@
   justify-content:center;
   align-items:center;
 }
-/*.logo__face{
-  width:200px;
-  height:auto;
-  position:absolute;
-  top:35%;
-  left:10px;
-  z-index:10;
-  animation: animateFace 2s linear infinite;
-}*/
 
 @media only screen and (max-width: 600px) {
 
@@ -64,9 +55,6 @@
   font-family:'Erica One';
   color:black;
   height:90vh;
-}
-.btn{
-   display:none;
 }
 
 }

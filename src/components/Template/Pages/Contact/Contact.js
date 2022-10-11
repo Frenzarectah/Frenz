@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import Button from '../../../Button/Button';
 import '../../../../App.scss';
 import './Contact.css';
@@ -7,6 +7,11 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Contact = () =>{
+    const [infoMail,setInfoMail] =useState({name:"",number:"",mail:"",message:""});
+    const sendMail = (info)=>{
+        const {name,number,mail,message} = info;
+        alert(message);
+    }
     const instaIcon = <FontAwesomeIcon icon={faInstagram} color="black" size="3x"/>
     const gitIcon = <FontAwesomeIcon icon={faGithub} color="black" size="3x"/>
     const linkedIcon = <FontAwesomeIcon icon={faLinkedin} color="black" size="3x"/>
@@ -18,22 +23,22 @@ const Contact = () =>{
             <section id="contact_sect">
                 <form className="contact__form" name="contact_form_name">
                     <div className="contact_wrapper">
-                        <input name="name" className="contact__form__input" type="text" placeholder="Who r u?" required/>
-                        <input name="phone" className="contact__form__input" type="tel" placeholder="A number to call you back..."/>
+                        <input name="name" className="contact__form__input" type="text" placeholder="Who r u?" required onChange={e=>{setInfoMail({name:e.target.value})}}/>
+                        <input name="phone" className="contact__form__input" type="tel" placeholder="A number to call you back..." onChange={e=>{setInfoMail({number:e.target.value})}}/>
                     </div>
                 <div className="contact_wrapper">
-                    <input name="email" className="contact__form__input _email" type="email" placeholder="...or an email to write you back." required/>
+                    <input name="email" className="contact__form__input _email" type="email" placeholder="...or an email to write you back." onChange={e=>{setInfoMail({mail:e.target.value})}} required/>
                 </div>
                 <div className="contact_wrapper">
-                    <textarea name="message" className="contact__form__input _textarea" placeholder="Say something to Frenz" required/>
+                    <textarea name="message" className="contact__form__input _textarea" placeholder="Say something to Frenz" required onChange={e=>{setInfoMail({message:e.target.value})}}/>
                 </div>
-                <Button width="100px" height="50px" font="Oswald" fontSize="20px" border="4px black solid" bkgColor="red" caption="send!"/>
+                <Button width="100px" height="50px" font="Oswald" fontSize="20px" border="4px black solid" bkgColor="red" caption="send!" handleClick={()=>sendMail(infoMail)}/>
             </form>
             </section>
             <section id="social_sect">
                  <div className="insta animate__animated animate__heartBeat  animate__delay-1s">{instaIcon}</div>
-                 <div className="git animate__animated animate__heartBeat  animate__delay-2s">{gitIcon}</div>
-                 <div className="linkedin animate__animated animate__heartBeat  animate__delay-3s">{linkedIcon}</div>
+                 <div className="git animate__animated animate__heartBeat  animate__delay-3s">{gitIcon}</div>
+                 <div className="linkedin animate__animated animate__heartBeat  animate__delay-2s">{linkedIcon}</div>
             </section>
             </div>
           </>  
