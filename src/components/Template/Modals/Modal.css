@@ -1,0 +1,18 @@
+.mail_modal{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:200px;
+    height:160px;
+    top:50%;
+    left:25%;
+    border:4px black solid;
+    background-color:yellow;
+    font-family:"Erica One";
+    z-index:10;
+}
+.hide{
+    display:none;
+}

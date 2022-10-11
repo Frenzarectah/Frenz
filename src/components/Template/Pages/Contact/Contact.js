@@ -8,15 +8,17 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import Modal from "../../Modals/Modal";
 
 const Contact = () =>{
+    const [visible,setVisible] =useState(false);
     const referenceForm = useRef();
     const sendEmail =(e)=>{
         e.preventDefault();
         emailjs.sendForm('personal', 'template_3ony9qg',referenceForm.current,'B-cYCihSV7vEgvD09')
           .then((result) => {
               console.log(result.text);
-              alert("email sent successfully!");
+              setVisible(true);
           }, (error) => {
               console.log(error.text);
           });
@@ -27,6 +29,7 @@ const Contact = () =>{
     const linkedIcon = <FontAwesomeIcon icon={faLinkedin} color="black" size="3x"/>
     return(
         <>
+        <Modal visible={visible}/>
         <div className="contact_title">Let's get in Touch!</div>
         <div className="contact">
             <section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"/>
