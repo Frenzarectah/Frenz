@@ -24,7 +24,6 @@
 #contact_sect{
     width:60%;
     display:flex;
-    border:1px solid black;
 }
 .contact__form{
     display:flex;
@@ -65,7 +64,6 @@
     display:flex;
     width:20%;
     height:90%;
-    border:1px solid white;
     flex-direction:column;
     justify-content:space-between;
     align-items:left;
@@ -99,7 +97,6 @@
     width:100%;
     height:100vh;
     justify-content:space-around;
-    border:1px black solid;
     align-items:center;
 }
 .contact{
@@ -110,7 +107,6 @@
     align-items:center;
 }
 .contact_form{
-    border:1px red solid;
     height:80vh;
 }
 #social_sect{
