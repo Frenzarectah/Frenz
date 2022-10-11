@@ -14,15 +14,16 @@ nav{
     box-sizing: border-box;
     background-color:rgba(0,0,0,1);
     transition:width 1s;
-    color:yellow;
     z-index:5;
+}
+.menu__container >li{
+    color:yellow;
 }
 .entering{
     width:50vw;
 }
-.entering > link{
+.entering > li{
     color:white !important;
-
 }
 ul{
     width:inherit;
