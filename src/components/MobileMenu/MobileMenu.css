@@ -14,10 +14,8 @@ nav{
     box-sizing: border-box;
     background-color:rgba(0,0,0,1);
     transition:width 1s;
-    z-index:5;
-}
-.menu__container>link{
     color:yellow;
+    z-index:5;
 }
 .entering{
     width:50vw;
