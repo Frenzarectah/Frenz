@@ -16,8 +16,15 @@ nav{
     transition:width 1s;
     z-index:5;
 }
+.menu__container>link{
+    color:yellow;
+}
 .entering{
     width:50vw;
+}
+.entering > link{
+    color:white !important;
+
 }
 ul{
     width:inherit;
