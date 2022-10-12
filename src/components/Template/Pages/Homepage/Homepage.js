@@ -11,7 +11,7 @@ const Homepage = ()=>{
     return(
         <div className="homepage">
             <div className="roll__text">
-                <span>FRENZ {iconAsterisk} SORRENTINO</span>
+                <span>FRENZ {iconStar} SORRENTINO</span>
             </div>
             <div className="subtitle">
                 <span>"Talented, Brilliant, Incredible and Amazing <s>FRONTEND DEVELOPER</s> liar"</span>
