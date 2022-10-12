@@ -1,10 +1,10 @@
 @import 'animate.css';
 
-$primary-font: "Erica One";
-
+$primary-color: yellow;
+$page-standard-height:80vh;
 
 body{
-  background-color:yellow;
+  background-color: $primary-color;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,49 +12,13 @@ body{
   overflow-x:hidden;
   overflow-y:scroll;
 }
-.main_container{
-  width:98%;
-  height:95vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#button__line__top{
-  width:98%;
-  padding:0px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#button__line__bottom{
-  width:98%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu__mobile{
-  display:none;
 
-}
-.title{
-  font-family: $primary-font;
+.page_height{
+  height:$page-standard-height;
 }
 
 
-@media only screen and (max-width: 600px) {
-.menu__mobile{
-  padding:10px;
-  display:block;
-  position:fixed;
-  right:0;
-  top:0;
-  z-index:10;
-}
 
-#button__line__top{
-  display:none;
-}
-#button__line__bottom{
-  display:none;
-}
-}
+
+
+

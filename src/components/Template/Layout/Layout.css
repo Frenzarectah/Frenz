@@ -1,0 +1,29 @@
+.main_container{
+    width:98%;
+    height:95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#button__line__top{
+    width:98%;
+    padding:0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#button__line__bottom{
+    width:98%;
+    padding:0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+@media only screen and (max-width: 600px) {
+#button__line__bottom{
+    display:none;
+}  
+#button__line__top{
+    display:none;
+}  
+}

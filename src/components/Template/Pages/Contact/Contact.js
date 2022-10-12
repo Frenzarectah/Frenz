@@ -34,7 +34,7 @@ const Contact = () =>{
         <div className="contact">
         <Modal visible={visible}/>
             <div className="contact_image_container animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
-                <img src={img_contact}/>
+                <img alt="contact baloon logo" src={img_contact}/>
             </div>
             <form className="contact_form" ref={referenceForm} onSubmit={sendEmail}>
                 <div>Let's Get in Touch!</div>
@@ -45,9 +45,9 @@ const Contact = () =>{
                 <button type="submit">Send!</button>
             </form>
         <div className="social">
-            <div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div>
-            <div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div>
-            <div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div>
+            <a href="https://instagram.com"><div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div></a>
+            <a href="https://github.com/Frenzarectah"><div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div></a>
+            <a href="https://www.linkedin.com/in/francesco-sorrentino-946981105/"><div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div></a>
         </div>
     </div>
     )

@@ -1,6 +1,7 @@
-import {React,useState} from "react"
+import {React } from "react"
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import '../../../App.scss';
+import './Layout.css';
 import {Route, Routes } from 'react-router-dom';
 import Button from "../../Button/Button";
 import Homepage from '../Pages/Homepage/Homepage';
@@ -30,7 +31,7 @@ const Layout = ()=>{
             </Routes>
             <div id="button__line__bottom">
                 <Button color="black" bkgColor="transparent" border="3px solid black" font="Permanent Marker" caption="projects" address="/projects"/>
-                <Button color="black" bkgColor="74a4bc" font="Sans-Serif" caption="blog" address="/blog"/>
+                {/*<Button color="black" bkgColor="74a4bc" font="Sans-Serif" caption="blog" address="/blog"/>*/}
                 <Button color="black" bkgColor="transparent" border="3px solid black" font="Rubik Dirt" caption="Contact" address="/contact"/>
             </div>
         </div>
