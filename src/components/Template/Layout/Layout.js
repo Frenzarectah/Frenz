@@ -1,7 +1,6 @@
 import {React,useState} from "react"
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import '../../../App.scss';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger, faHome } from "@fortawesome/free-solid-svg-icons";
 import {Route, Routes } from 'react-router-dom';
 import Button from "../../Button/Button";
 import Homepage from '../Pages/Homepage/Homepage';
@@ -10,20 +9,14 @@ import Projects from "../Pages/Projects/Projects";
 import Blog from "../Pages/Blog/Blog";
 import About from "../Pages/About/About";
 import MobileMenu from "../../MobileMenu/MobileMenu";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Layout = ()=>{
-    const [visible,setVisible] = useState(false);
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
-    const hambMenu = (visibility)=> 
-       <FontAwesomeIcon icon={faHamburger} color={visibility?"white":"black"} size="3x"/>
-    
     return(
         <>
-        <MobileMenu visible={visible}/>
+        <MobileMenu/>
         <div className="main_container">
-            <div className="menu__mobile animate__animated animate__shakeX animate__delay-2s" onClick={()=>setVisible(!visible)}>
-                {hambMenu(visible)}
-            </div>
             <div id="button__line__top">
                 <Button color="black" bkgColor="blue" caption={iconHome} address="/"/>
                 <Button color="black" bkgColor="red" font="Erica One" caption="About" address="/whoami"/>
