@@ -1,12 +1,10 @@
 import React from "react";
 import '../../../../App.scss';
 import './Homepage.css';
-import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Homepage = ()=>{
-    const iconAsterisk = <FontAwesomeIcon icon={faAsterisk} color="black"/>
     const iconStar = <FontAwesomeIcon icon={faStar} color="black"/>
     return(
         <div className="homepage">
