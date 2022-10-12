@@ -13,17 +13,16 @@ import MobileMenu from "../../MobileMenu/MobileMenu";
 
 const Layout = ()=>{
     const [visible,setVisible] = useState(false);
-    
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
-    const hambMenu = (col)=> 
-       <FontAwesomeIcon icon={faHamburger} color={col} size="3x"/>
+    const hambMenu = (visibility)=> 
+       <FontAwesomeIcon icon={faHamburger} color={visibility?"white":"black"} size="3x"/>
     
     return(
         <>
         <MobileMenu visible={visible}/>
         <div className="main_container">
             <div className="menu__mobile animate__animated animate__shakeX animate__delay-2s" onClick={()=>setVisible(!visible)}>
-                {hambMenu(visible?"white":"black")}
+                {hambMenu(visible)}
             </div>
             <div id="button__line__top">
                 <Button color="black" bkgColor="blue" caption={iconHome} address="/"/>
