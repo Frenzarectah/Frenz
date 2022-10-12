@@ -1,60 +1,55 @@
-import {React, useState} from "react";
-import Button from '../../../Button/Button';
-import '../../../../App.scss';
+import React, { useRef,useState } from "react";
 import './Contact.css';
+import '../../../../App.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Modal from "../../Modals/Modal";
+import img_contact from '../Contact/contact_baloon.png'; 
+
+
+const instaIcon = <FontAwesomeIcon icon={faInstagram} color="black" size="3x"/>
+const gitIcon = <FontAwesomeIcon icon={faGithub} color="black" size="3x"/>
+const linkedIcon = <FontAwesomeIcon icon={faLinkedin} color="black" size="3x"/>
 
 const Contact = () =>{
+    
     const [visible,setVisible] =useState(false);
     const referenceForm = useRef();
+    
     const sendEmail =(e)=>{
         e.preventDefault();
         emailjs.sendForm('personal', 'template_3ony9qg',referenceForm.current,'B-cYCihSV7vEgvD09')
           .then((result) => {
               console.log(result.text);
-              setVisible(true);
+              setVisible(!visible);
           }, (error) => {
               console.log(error.text);
           });
-      };
-    
-    const instaIcon = <FontAwesomeIcon icon={faInstagram} color="black" size="3x"/>
-    const gitIcon = <FontAwesomeIcon icon={faGithub} color="black" size="3x"/>
-    const linkedIcon = <FontAwesomeIcon icon={faLinkedin} color="black" size="3x"/>
+    };
+
     return(
-        <>
-        <Modal visible={visible}/>
-        <div className="contact_title">Let's get in Touch!</div>
         <div className="contact">
-            <section id="image_container" className="animate__animated animate__heartBeat animate__infinite	infinite animate__slower"/>
-            <section id="contact_sect">
-                <form className="contact__form" ref={referenceForm} onSubmit={sendEmail} name="contact_form_name">
-                    <div className="contact_wrapper">
-                        <input name="name" className="contact__form__input" type="text" placeholder="Who r u?" required/>
-                        <input name="phone" className="contact__form__input" type="tel" placeholder="A number to call you back..."/>
-                    </div>
-                <div className="contact_wrapper">
-                    <input name="email" className="contact__form__input _email" type="email" placeholder="...or an email to write you back."required/>
-                </div>
-                <div className="contact_wrapper">
-                    <textarea name="message" className="contact__form__input _textarea" placeholder="Say something to Frenz" required/>
-                </div>
+        <Modal visible={visible}/>
+            <div className="contact_image_container animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
+                <img src={img_contact}/>
+            </div>
+            <form className="contact_form" ref={referenceForm} onSubmit={sendEmail}>
+                <div>Let's Get in Touch!</div>
+                <input name="name" type="text" placeholder="Who r U?" required/>
+                <input name="phone" type="number" placeholder="leave a phone number..."/>
+                <input name="mail" type="email" placeholder="...or an email..." required/>
+                <textarea name="message" type="text" placeholder="...and write something to Frenz" required/> 
                 <button type="submit">Send!</button>
             </form>
-            </section>
-            <section id="social_sect">
-                 <div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div>
-                 <div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div>
-                 <div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div>
-            </section>
-            </div>
-          </>  
+        <div className="social">
+            <div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div>
+            <div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div>
+            <div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div>
+        </div>
+    </div>
     )
 }
 export default Contact;

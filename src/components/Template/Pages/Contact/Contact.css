@@ -1,37 +1,38 @@
-#image_container{
-    width:320px;
-    height:260px;
-    background-size:cover;
-    background-position:left top;
-    z-index:5;
-}
 .contact{
+    width:90%;
     display:flex;
-    width:85%;
-    height:80vh;
     flex-direction:row;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
     font-weight:bold;
     font-family:"Oswald";
-    z-index:3;
 }
-.contact_title{
+.contact_image_container{
+    justify-self:center;
+    align-items:center;
+    width:20%;
+}
+::-webkit-input-placeholder {
+    font-size:20px;
+    font-weight:bold;
     font-family:"Oswald";
-    font-size:30px;
 }
-#contact_sect{
-    width:60%;
-    display:flex;
-}
-.contact__form{
-    display:flex;
+img{
     width:100%;
+    height:auto;
+}
+.contact_form{
+    display:flex;
+    width:60%;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
 }
-.contact__form__input{
+.social{
+    width:20%;
+    height:80%;
+}
+
+input{
     background-color:#ffffff;
     width:40%;
     margin:10px;
@@ -42,34 +43,20 @@
     border:5px solid black;
     border-radius:10px;
 }
-.contact_wrapper{
-    width:100%;
-    display:flex;
-    justify-content:center;
-}
-._email{
-    width:75%;
-}
-._textarea{
+textarea{
+    background-color:#ffffff;
     width:75%;
     height:100px;
-}
-::-webkit-input-placeholder {
-    font-size:20px;
-    font-weight:bold;
+    margin:10px;
     font-family:"Oswald";
-}
-#social_sect{
-    display:flex;
-    width:20%;
-    height:90%;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:left;
+    font-size:20px;
+    padding:5px;
+    border:5px solid black;
+    border-radius:10px;
 }
 .linkedin{
     position:relative;
-    top:-50px;
+    top:150px;
     left:70px;
 }
 
@@ -80,8 +67,8 @@
 }
 .insta{
     position:relative;
-    top:110px;
-    left:90px;
+    top:150px;
+    left:160px;
 }
 button{
     width:100px;
@@ -91,32 +78,25 @@ button{
     background-color:#ff0000;
 }
 @media only screen and (max-width: 600px) {
-#image_container{
-    display:flex;
-    justify-content:center;
-}
-#image_container>img{
-    width:200px;
-}
-#contact_sect{
-    width:100%;
-    height:100vh;
-    justify-content:space-around;
-    align-items:center;
-}
 .contact{
-    display:flex;
-    width:100%;
     flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
+    width:100%;
 }
 .contact_form{
-    height:80vh;
+    width:80%;
 }
-#social_sect{
-    width:100%;
+.contact_image_container{
+    margin-top:30px;
+    width:50%;
+    height:auto;
+}
+input{
+    width:50%;
+}
+.social{
     display:flex;
+    width:80%;
+    margin-top:20px;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
@@ -124,10 +104,9 @@ button{
 .insta,.linkedin,.git{
     position:static;
 }
-button{
-    width:100px;
-    height:70px;
-    border:4px black solid;
-    background-color:#ff0000;
 }
-}
+/*@media only screen and (max-height: 700px){
+    .contact_image_container{
+        display:none;
+    }
+}*/
