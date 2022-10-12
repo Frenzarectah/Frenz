@@ -9,7 +9,8 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:scroll;
 }
 .main_container{
   width:98%;

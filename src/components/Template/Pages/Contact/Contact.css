@@ -83,15 +83,18 @@ button{
     width:100%;
 }
 .contact_form{
-    width:80%;
+    width:90%;
 }
 .contact_image_container{
-    margin-top:30px;
+    margin-top:20px;
     width:50%;
     height:auto;
 }
 input{
-    width:50%;
+    width:60%;
+}
+textarea{
+    width:85%;
 }
 .social{
     display:flex;
