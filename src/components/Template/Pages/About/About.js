@@ -19,7 +19,7 @@ const About = () =>{
                 </p>
                 <p>
                     He hopes to be hired by a wideopen-minded company which takes care about his people and focusing on continuos training
-                    and gives the possibility to grow togheter. 
+                    and gives the possibility to grow together. 
                 </p>
             </div>
             <div className="about__photo animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
