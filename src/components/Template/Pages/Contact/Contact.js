@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import emailjs from '@emailjs/browser';
 import Modal from "../../Modals/Modal";
-import img_contact from '../Contact/contact_baloon.png'; 
+import img_contact from '../Contact/contact_baloon.webp'; 
 
 
 const instaIcon = <FontAwesomeIcon icon={faInstagram} color="black" size="3x"/>
