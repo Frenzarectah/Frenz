@@ -1,0 +1,39 @@
+.projects{
+    width:100%;
+    padding:20px;
+    height:80vh;
+    font-family:"Oswald";
+    font-size: 20px;
+    font-weight:bold;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+&__descr{
+    width:40%;
+    padding:10px;
+    border:8px solid black;
+    border-radius:10px;
+    font-size:20px;
+    background:white;    
+}
+&__image__container{
+    display:flex;
+    width:30%;
+    justify-self:center;
+    align-self:flex-start;
+}
+}
+img{
+    width:100%;
+    height:auto;
+}
+a.github{
+    text-decoration:none;
+    color:white;
+    background-color:black;
+}
+a.github:hover{
+    background-color:white;
+    color:black;
+}
