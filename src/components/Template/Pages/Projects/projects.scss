@@ -95,7 +95,6 @@ a{
         display:flex;
         flex-direction:column;
         align-items: center;
-        //justify-content: center;
     
     &__wrapper{
         width:100%;
@@ -121,6 +120,6 @@ a{
     z-index:-1;
 }
 .card>div{
-    font-size:15px;
+    font-size:12px;
 }
 }
