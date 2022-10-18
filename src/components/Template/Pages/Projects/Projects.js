@@ -2,21 +2,21 @@ import React from "react";
 import project_baloon from './projects.png';
 import './projects.scss';
 import ProjectCard from "./Projects_Card/ProjectsCard";
-import projectz from './db.js';
+import projectz  from './db.js';
 
 const Project = () =>{
+    const projList = projectz.map(item=>
+        <ProjectCard id={item.id} image={item.thumbnail} link={item.link} name={item.name} stack={item.stack}/>
+    )
+
     return(
         <div className="projects">
-            <div className="projects__descr">
-                <p>In this page i'll collect my work as frontend developer, a kind of
-                local repository.
-                Every single project has his own link to my <a className="github" href="https://github.com/Frenzarectah"><strong>github </strong></a>
-                if u want to take a look to my code :)</p>
-                <p>Feel free to take a look to all of them, sorted by technology and developing data.</p>
-                <p>C ya!</p>
-                <ProjectCard name={projectz[1].name} descr={projectz[1].description} stack={projectz[1].stack} />
+            <div className="projects__wrapper">
+                <div className="projects__cards">
+                    {projList}
+                </div>
             </div>
-            <img className="projects__image__container animate__animated animate__wobble animate__infinite infinite animate__slower" src={project_baloon}/>
+            <img className="projects__image__container animate__animated animate__heartBeat animate__infinite infinite animate__slower" src={project_baloon}/>
         </div>
     )
 }

@@ -1,3 +1,7 @@
+@keyframes scroll{
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
 .projects{
     width:100%;
     padding:20px;
@@ -9,17 +13,34 @@
     flex-direction:row;
     justify-content: center;
 
-&__descr{
-    width:40%;
+&__wrapper{
+    display:flex;
+    align-items: center;
     padding:10px;
     border:8px solid black;
     border-radius:10px;
     font-size:20px;
-    background:white;    
+    background:white;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;    
+}
+&__cards{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
+}
+&__cards:hover{
+    animation-play-state: paused;
 }
 &__image__container{
     display:flex;
-    width:30%;
+    position:absolute;
+    top:-5%;
+    width:20%;
     justify-self:center;
     align-self:flex-start;
 }
@@ -36,4 +57,70 @@ a.github{
 a.github:hover{
     background-color:white;
     color:black;
+}
+.card{
+    display:flex;
+    margin:0px 10px;
+    flex-direction:column;
+    justify-content:space-between;
+    width:350px;
+    height:350px;
+    border:7px black solid;
+}
+.card>img{
+    position:absolute;
+    width:350px;
+    height:350px;
+    z-index:-1;
+}
+.card>div{
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+@media only screen and (max-width: 600px) {
+    .projects{
+        width:100%;
+        padding:20px;
+        height:70vh;
+        font-family:"Oswald";
+        font-size: 20px;
+        font-weight:bold;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        //justify-content: center;
+    
+    &__wrapper{
+        width:100%;
+        height:70%;
+    }
+    &__image__container{
+        display:flex;
+        position:absolute;
+        top:5%;
+        width:50%;
+        justify-self:center;
+        align-self:center;
+    }
+}
+.card{
+    width:200px;
+    height:200px;
+}
+.card>img{
+    position:absolute;
+    width:200px;
+    height:200px;
+    z-index:-1;
+}
+.card>div{
+    font-size:15px;
+}
 }
