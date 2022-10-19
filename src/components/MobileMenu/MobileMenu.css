@@ -18,7 +18,7 @@ nav{
 }
 .menu__container{
     width:0vw;
-    height:100vh;
+    height:100%;
     position:absolute;
     top:0;
     right:0;
