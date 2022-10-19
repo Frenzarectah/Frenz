@@ -3,14 +3,13 @@
 $primary-color: yellow;
 $page-standard-height:80vh;
 
-body{
+html,body{
+  width:100%;
   background-color: $primary-color;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  overflow-x:hidden;
-  overflow-y:scroll;
+  overflow:hidden;
+}
+body{
+  position:relative;
 }
 
 .page_height{
