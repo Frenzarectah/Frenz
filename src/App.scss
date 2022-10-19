@@ -4,7 +4,7 @@ $primary-color: yellow;
 $page-standard-height:80vh;
 
 html,body{
-  margin:0;
+  margin:10px;
   width:100%;
   height:100%;
   background-color: $primary-color;
@@ -14,7 +14,7 @@ body{
   position:relative;
 }
 
-.page_height{
+.standard_page{
   height:$page-standard-height;
 }
 html, body {
@@ -25,6 +25,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
 html,body{
+  margin:0;
   overflow-y:scroll !important;
 }
 }

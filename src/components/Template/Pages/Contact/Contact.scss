@@ -1,16 +1,26 @@
 .contact{
     width:90%;
+    height:80vh;
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
     font-weight:bold;
     font-family:"Oswald";
+&_title{
+    font-size:30px;
 }
-.contact_image_container{
+&_image_container{
     justify-self:center;
     align-items:center;
     width:20%;
+}
+&_form{
+    display:flex;
+    width:60%;
+    flex-direction:column;
+    align-items:center;
+}
 }
 ::-webkit-input-placeholder {
     font-size:20px;
@@ -21,15 +31,13 @@ img{
     width:100%;
     height:auto;
 }
-.contact_form{
-    display:flex;
-    width:60%;
-    flex-direction:column;
-    align-items:center;
-}
 .social{
-    width:20%;
-    height:80%;
+    background-image:url("./box_social.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    width:25%;
+    height:85%;
 }
 
 input{
@@ -38,7 +46,7 @@ input{
     margin:10px;
     font-family:"Oswald";
     font-size:20px;
-    height:50px;
+    height:35px;
     padding:5px;
     border:5px solid black;
     border-radius:10px;
@@ -57,18 +65,18 @@ textarea{
 .linkedin{
     position:relative;
     top:150px;
-    left:70px;
+    left:140px;
 }
 
 .git{
     position:relative;
-    top:30px;
-    left:40px;
+    top:140px;
+    left:190px;
 }
 .insta{
     position:relative;
-    top:150px;
-    left:160px;
+    top:170px;
+    left:150px;
 }
 button{
     width:100px;
@@ -81,14 +89,15 @@ button{
 .contact{
     flex-direction:column;
     width:100%;
-}
-.contact_form{
+
+&_form{
     width:90%;
 }
-.contact_image_container{
-    margin-top:20px;
+&_image_container{
+    margin-top:20vh;
     width:50%;
     height:auto;
+}
 }
 input{
     width:60%;
@@ -98,6 +107,7 @@ textarea{
 }
 .social{
     display:flex;
+    background:none;
     width:80%;
     margin-top:20px;
     flex-direction:row;
@@ -108,8 +118,3 @@ textarea{
     position:static;
 }
 }
-/*@media only screen and (max-height: 700px){
-    .contact_image_container{
-        display:none;
-    }
-}*/

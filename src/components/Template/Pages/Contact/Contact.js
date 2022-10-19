@@ -1,5 +1,5 @@
 import React, { useRef,useState } from "react";
-import './Contact.css';
+import './Contact.scss';
 import '../../../../App.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -37,14 +37,14 @@ const Contact = () =>{
                 <img alt="contact baloon logo" src={img_contact}/>
             </div>
             <form className="contact_form" ref={referenceForm} onSubmit={sendEmail}>
-                <div>Let's Get in Touch!</div>
+                <div className="contact_title">Let's Get in Touch!</div>
                 <input name="name" type="text" placeholder="Who r U?" required/>
                 <input name="phone" type="number" placeholder="leave a phone number..."/>
                 <input name="mail" type="email" placeholder="...or an email..." required/>
                 <textarea name="message" type="text" placeholder="...and write something to Frenz" required/> 
                 <button type="submit">Send!</button>
             </form>
-        <div className="social">
+        <div className="social animate__animated animate__headShake animate__repeat-3 animate__delay-2s">
             <a href="https://instagram.com"><div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div></a>
             <a href="https://github.com/Frenzarectah"><div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div></a>
             <a href="https://www.linkedin.com/in/francesco-sorrentino-946981105/"><div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div></a>
