@@ -17,7 +17,17 @@ body{
 .page_height{
   height:$page-standard-height;
 }
-
+html, body {
+  overflow: hidden;
+}
+body {
+  position: relative
+}
+@media only screen and (max-width: 600px) {
+html,body{
+  overflow-y:scroll !important;
+}
+}
 
 
 
