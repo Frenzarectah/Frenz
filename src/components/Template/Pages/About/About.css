@@ -1,11 +1,12 @@
 .about{
     padding:20px;
-    height:80vh;
+    height:100vh;
     font-family:"Oswald";
     font-size: 20px;
     font-weight:bold;
     display:flex;
     flex-direction:row;
+    align-items:center;
 }
 .about__photo{
     width:420px;
