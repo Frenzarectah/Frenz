@@ -1,6 +1,7 @@
 import React from "react";
 import '../../../../App.scss';
-import './About.css';
+import './About.scss';
+import photo from '../About/mi_star.webp';
 const About = () =>{
     return(
         <div className="about">
@@ -23,6 +24,7 @@ const About = () =>{
                 </p>
             </div>
             <div className="about__photo animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
+                <img src={photo} alt="author portait"/>
             </div>
         </div>
     )

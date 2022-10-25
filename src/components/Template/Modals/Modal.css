@@ -7,9 +7,13 @@
     width:200px;
     height:160px;
     top:50%;
-    left:25%;
+    left:33%;
     border:4px black solid;
     background-color:yellow;
     font-family:"Erica One";
     z-index:10;
+}
+.modal_close{
+    background-color:transparent;
+    border:2px black solid;
 }

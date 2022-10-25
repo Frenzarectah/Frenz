@@ -11,7 +11,7 @@ const Modal = (prop)=>{
             {view &&
             <div className="mail_modal">
                 CONTACT SENT!
-                <button onClick={()=>setView(!view)}>close</button>
+                <button className="modal_close" onClick={()=>setView(!view)}>close</button>
             </div>
             }
             </>
