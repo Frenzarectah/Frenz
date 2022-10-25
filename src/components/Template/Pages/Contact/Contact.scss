@@ -33,7 +33,6 @@ img{
     height:auto;
 }
 .social{
-    border:4px black solid;
     width:20%;
     height:50%;
     &_div{
@@ -42,6 +41,12 @@ img{
         height:170px;
         background-image: url(../Projects/empty_baloon.png);
         background-size: cover;
+    }
+    &_icons{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -128,6 +133,12 @@ textarea{
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
+    &_div{
+        display:none;
+    }
+    &_icons{
+        justify-content: space-between;
+    }
 }
 .insta,.linkedin,.git{
     position:static;
