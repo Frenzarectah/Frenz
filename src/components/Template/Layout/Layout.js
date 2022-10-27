@@ -18,8 +18,8 @@ const Layout = ()=>{
         <>
         <MobileMenu/>
         <div className="main_container">
-                <Button cln="topLeft" color="black" bkgColor="blue" caption={iconHome} address="/"/>
-                <Button cln="topRight" color="black" bkgColor="red" font="Erica One" caption="About" address="/whoami"/>
+                <Button cln="topLeft" color="black" bkgColor="transparent" border="3px solid black" caption={iconHome} address="/"/>
+                <Button cln="topRight" color="black" bkgColor="transparent" border="3px solid black" font="Erica One" caption="About" address="/whoami"/>
             <Routes>
                 <Route path="/" element={<Homepage/>}/>
                 <Route path="/whoami" element={<About/>}/>
