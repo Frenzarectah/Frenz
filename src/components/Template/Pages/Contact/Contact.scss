@@ -25,6 +25,8 @@
 }
 ::-webkit-input-placeholder {
     font-size:40px;
+    display:flex;
+    align-items: center;
     font-weight:bold;
     font-family:"Oswald";
 }
@@ -49,8 +51,6 @@ img{
         justify-content: space-around;
     }
 }
-
-
 input{
     background-color:#ffffff;
     width:60%;
@@ -73,22 +73,6 @@ textarea{
     border:5px solid black;
     border-radius:10px;
 }
-/*.linkedin{
-    position:relative;
-    top:50px;
-    left:40px;
-}
-
-.git{
-    position:relative;
-    top:40px;
-    left:90px;
-}
-.insta{
-    position:relative;
-    top:100px;
-    left:100px;
-}*/
 button{
     width:100px;
     height:45px;
@@ -107,7 +91,6 @@ button{
     align-items: center;
 }
 &_image_container{
-    margin-top:15vh;
     width:50%;
     height:auto;
 }
@@ -142,5 +125,10 @@ textarea{
 }
 .insta,.linkedin,.git{
     position:static;
+}
+}
+@media only screen and (max-height: 700px) {
+.contact_image_container{
+    margin-top:15vh;
 }
 }
