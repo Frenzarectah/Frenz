@@ -1,25 +1,11 @@
 .main_container{
-    width:98%;
+    width:100%;
     height:95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-/*
-#button__line__top{
-    width:98%;
-    padding:0px 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#button__line__bottom{
-    width:98%;
-    padding:0 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }*/
 .btn_{
     &topLeft{
         position:fixed;
@@ -44,6 +30,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+.main_container{
+    margin:0;
+    padding:0;
+}
 .main_container button{
     display:none;
 }
