@@ -1,10 +1,7 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 import bkg1 from './Projects_Card/proj_card1.png';
 import bkg2 from './Projects_Card/proj_card2.png';
+import bkg3 from './Projects_Card/proj_card3.png';
 
-const star = <FontAwesomeIcon icon={faStar} color="black" size="s"/>
 const projectz = [
     {
         id:0,
@@ -19,6 +16,13 @@ const projectz = [
         thumbnail:bkg2,
         stack:"HTML★CSS★Javascript",
         link:"https://mobileapp-frenz.netlify.app/"
+    },
+    {
+        id:2,
+        name:"★This site :D★",
+        thumbnail:bkg3,
+        stack:"HTML★SCSS★React.js★",
+        link:"https://frenz-dev.netlify.app"
     }
 ]
 export default projectz ;

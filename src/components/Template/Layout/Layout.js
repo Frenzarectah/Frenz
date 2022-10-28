@@ -2,8 +2,8 @@ import {React } from "react"
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import '../../../App.scss';
 import './Layout.scss';
+import Nav from "../../Nav/Nav";
 import {Route, Routes } from 'react-router-dom';
-import Button from "../../Button/Button";
 import Homepage from '../Pages/Homepage/Homepage';
 import Contact from "../Pages/Contact/Contact";
 import Projects from "../Pages/Projects/Projects";
@@ -18,8 +18,7 @@ const Layout = ()=>{
         <>
         <MobileMenu/>
         <div className="main_container">
-                <Button cln="topLeft" color="black" bkgColor="transparent" border="3px solid black" caption={iconHome} address="/"/>
-                <Button cln="topRight" color="black" bkgColor="transparent" border="3px solid black" font="Erica One" caption="About" address="/whoami"/>
+            <Nav/>
             <Routes>
                 <Route path="/" element={<Homepage/>}/>
                 <Route path="/whoami" element={<About/>}/>
@@ -27,9 +26,6 @@ const Layout = ()=>{
                 <Route path="/blog" element={<Blog/>}/>
                 <Route path="/contact" element={<Contact/>}/>
             </Routes>
-                <Button cln="bottomLeft" color="black" bkgColor="transparent" border="3px solid black" font="Permanent Marker" caption="projects" address="/projects"/>
-                {/*<Button color="black" bkgColor="74a4bc" font="Sans-Serif" caption="blog" address="/blog"/>*/}
-                <Button cln="bottomRight" color="black" bkgColor="transparent" border="3px solid black" font="Rubik Dirt" caption="Contact" address="/contact"/>
         </div>
         </>
     )

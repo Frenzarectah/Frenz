@@ -13,16 +13,13 @@ html,body{
 body{
   position:relative;
 }
-
-.standard_page{
-  height:$page-standard-height;
-}
 html, body {
   overflow: hidden;
 }
 body {
-  position: relative
+  position: relative;
 }
+
 @media only screen and (max-width: 600px) {
 html,body{
   margin:0;
