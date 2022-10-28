@@ -8,7 +8,7 @@ const Nav = () =>{
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
     return(
         <nav className="fixed_nav">
-            <FontAwesomeIcon icon={faHamburger} color="black"/>
+            <div className="logo"><FontAwesomeIcon icon={faHamburger} color="black" size="3x"/></div>
             <ul>
                 <li>
                 <Button color="black" bkgColor="transparent" border="3px solid black" caption={iconHome} address="/"/>

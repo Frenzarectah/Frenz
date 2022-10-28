@@ -5,6 +5,15 @@
     justify-content: space-around;
     width:100%;    
 }
+.fixed_nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.logo{
+    display:flex;
+    justify-self:left;
+}
 @media screen and (max-width:600px) {
 .fixed_nav{
         display:none;
