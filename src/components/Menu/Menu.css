@@ -1,14 +1,28 @@
-.menu__mobile{
-    display:none;
+.menu{
+    position:absolute;
+    top:10px;
+    margin:10px;
   }
-.menu__container{
-    display:none;
+.menu__container ul{
+    display:flex;
+    flex-direction:row;
+    position:absolute; 
+    top:10px;
+    list-style-type: none;
+    font-family: 'Erica One';
+    font-size:25px;
+    margin:30px;
+    gap:20px;
 }
+.link{
+    color:black;
+}
+
 @media only screen and (max-width: 600px) {
 .menu__container{
     display:block;
 }
-.menu__mobile{
+.menu{
     padding:10px;
     display:block;
     position:fixed;
@@ -27,6 +41,10 @@
     transition:width 1s;
     z-index:5;
 }
+.menu__container ul{
+    display:flex;
+    flex-direction:column;
+}
 .entering{
     width:50vw;
 }
@@ -38,8 +56,6 @@ ul{
     padding-top:40px;
     display:flex;
     flex-direction:column;
-    font-family:"Erica One";
-    font-size:25px;
     list-style-type:none;
 }
 .link{

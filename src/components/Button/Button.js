@@ -26,11 +26,11 @@ const Button = (props)=>{
 }
 
 Button.defaultProps={
-    "width":"50px",
-    "height":"20px",
+    "width":"100px",
+    "height":"40px",
     "type":"Submit",
     "font":"Sans-serif",
-    "fontSize":"20px",
+    "fontSize":"12px",
     "border":"none"
 }
 export default Button;
