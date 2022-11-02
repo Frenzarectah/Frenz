@@ -44,6 +44,8 @@
 .menu__container ul{
     display:flex;
     flex-direction:column;
+    margin:15px 0;
+    gap: 5px;
 }
 .entering{
     width:50vw;
