@@ -1,7 +1,7 @@
 import {React , useState} from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger} from "@fortawesome/free-solid-svg-icons";
+import { faHamburger,faHome} from "@fortawesome/free-solid-svg-icons";
 import './Menu.css';
 
 const Menu = ()=>{
@@ -14,6 +14,7 @@ const Menu = ()=>{
             return(<FontAwesomeIcon icon={faHamburger} color="black" size="3x"/>
         )}
     }
+    const homeIcon = <FontAwesomeIcon icon={faHome} color="black" size="1x"/>
     let cln = "menu__container ";
       if(view)cln+="entering";
         return(
@@ -23,11 +24,11 @@ const Menu = ()=>{
             </div>
             <nav className={cln}>
                 <ul>    
-                    <li><NavLink exact="true" className="link" to="/" onClick={()=>setView(!view)}>home</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/whoami" onClick={()=>setView(!view)}>about</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/projects" onClick={()=>setView(!view)}>projects</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/contact" onClick={()=>setView(!view)}>contacts</NavLink></li>
-                    <li><NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/blog" onClick={()=>setView(!view)}>blog</NavLink></li>
+                    <NavLink exact="true" className="link" to="/" onClick={()=>setView(!view)}><li>home</li></NavLink>
+                    <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/whoami" onClick={()=>setView(!view)}><li>about</li></NavLink>
+                    <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/projects" onClick={()=>setView(!view)}><li>projects</li></NavLink>
+                    <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/contact" onClick={()=>setView(!view)}><li>contacts</li></NavLink>
+                    <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/blog" onClick={()=>setView(!view)}><li>blog</li></NavLink>
                 </ul>
             </nav>
             </>

@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 .menu{
     position:absolute;
     top:10px;
@@ -10,22 +12,26 @@
     list-style-type: none;
     font-family: 'Erica One';
     font-size:25px;
-    margin:30px;
+    right:100px;
+    padding:5px;
+    margin:20px;
     gap:20px;
-}
-Navlink{
-    height:fit-content;
 }
 .link{
     color:black;
-    padding: 5px;
-    border:2px black solid;
+    height:20px;
+    background-color:transparent;
+    border:0px black solid;
+    transition:background-color 1s
+}
+.actual{
+    color:black;
+}
+.link:hover{
+    background-color: white;
 }
 
 @media only screen and (max-width: 600px) {
-.menu__container{
-    display:block;
-}
 .menu{
     padding:10px;
     display:block;
@@ -35,6 +41,7 @@ Navlink{
     z-index:10;
 }
 .menu__container{
+    display:block;
     width:0vw;
     height:110vh;
     position:absolute;
@@ -45,34 +52,29 @@ Navlink{
     transition:width 1s;
     z-index:5;
 }
-.menu__container ul{
-    display:flex;
-    flex-direction:column;
-    margin:15px 0;
-    gap: 5px;
-}
 .entering{
     width:50vw;
 }
-.entering > li{
-    color:white !important;
-}
-ul{
-    width:inherit;
-    padding-top:40px;
+.menu__container ul{
     display:flex;
     flex-direction:column;
     list-style-type:none;
+    margin-top:60px;
+    margin-left:5px;
+    position:static;
 }
 .link{
+    width:100%;
     color:white;
     text-decoration:none;
+}
+.link:hover{
+    background-color:transparent !important;
 }
 .actual{
     color:white;
-    text-decoration:none;
-}
-.actual::after{
-    content:"<";
+    text-decoration-line: underline;
+    text-decoration-color: white;
+
 }
 }
