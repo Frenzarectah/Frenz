@@ -7,15 +7,19 @@
     display:flex;
     flex-direction:row;
     position:absolute; 
-    top:10px;
     list-style-type: none;
     font-family: 'Erica One';
     font-size:25px;
     margin:30px;
     gap:20px;
 }
+Navlink{
+    height:fit-content;
+}
 .link{
     color:black;
+    padding: 5px;
+    border:2px black solid;
 }
 
 @media only screen and (max-width: 600px) {
