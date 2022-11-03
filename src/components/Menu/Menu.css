@@ -2,8 +2,7 @@
 
 .menu{
     position:absolute;
-    top:10px;
-    margin:10px;
+    margin:20px;
   }
 .menu__container ul{
     display:flex;
@@ -12,8 +11,7 @@
     list-style-type: none;
     font-family: 'Erica One';
     font-size:25px;
-    right:100px;
-    padding:5px;
+    right:20px;
     margin:20px;
     gap:20px;
 }
@@ -33,7 +31,7 @@
 
 @media only screen and (max-width: 600px) {
 .menu{
-    padding:10px;
+    padding:20px;
     display:block;
     position:fixed;
     right:0;
