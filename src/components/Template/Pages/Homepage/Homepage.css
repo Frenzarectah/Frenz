@@ -4,13 +4,16 @@
 }
 
 .homepage{
-    padding:10px;
+    display:flex;
+    margin:0;
+    flex-direction: column;
+    justify-content: center;
     font-family:'Erica One';
     color:black;
-    height:80vh;
+    height:100vh;
   }
 .roll__text{
-  width: 100vw;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
@@ -35,13 +38,16 @@
 
 .subtitle{
     font-family:"Newsreader";
-    padding:20px;
+    width:50%;
     text-align:center;
     display:flex;
-    font-size:6vw;
+    font-size:5vw;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+}
+.subtitle span{
+  width:80%;
 }
 .homepage{
   padding:10px;
