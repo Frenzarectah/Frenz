@@ -5,6 +5,7 @@
 .projects{
     width:100%;
     padding:20px;
+    margin-top:40px;
     height:100vh;
     font-family:"Oswald";
     font-size: 20px;
@@ -42,7 +43,7 @@
 &__image__container{
     display:flex;
     position:absolute;
-    top:-5%;
+    right:20px;
     width:20%;
     justify-self:center;
     align-self:flex-start;
@@ -106,9 +107,9 @@ a{
     }
     &__image__container{
         display:flex;
-        position:absolute;
+/*        position:absolute;
         top:5%;
-        width:50%;
+        width:50%;*/
         justify-self:center;
         align-self:center;
     }
