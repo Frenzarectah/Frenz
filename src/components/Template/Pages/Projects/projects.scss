@@ -1,6 +1,6 @@
 @keyframes scroll{
     0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
+    100% { transform: translate(-80%, 0); }
 }
 .projects{
     width:100%;
@@ -11,10 +11,12 @@
     font-size: 20px;
     font-weight:bold;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-
+&__header{
+    width:80%;
+}
 &__wrapper{
     display:flex;
     align-items: center;
@@ -25,13 +27,13 @@
     font-size:20px;
     background:white;
     width:80%;
-    height:70vh;
+    height:65vh;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;    
 }
 &__cards{
-    display:flex;
+    display:inline-flex;
     flex-direction: row;
     align-items: center;
     padding-left: 100%;
@@ -43,6 +45,7 @@
 &__image__container{
     display:flex;
     position:absolute;
+    top:5%;
     right:20px;
     width:20%;
     justify-self:center;
@@ -54,12 +57,7 @@ img{
     height:auto;
 }
 a.github{
-    text-decoration:none;
-    color:white;
-    background-color:black;
-}
-a.github:hover{
-    background-color:white;
+    text-decoration:underline;
     color:black;
 }
 .card{
@@ -84,6 +82,10 @@ a.github:hover{
     justify-content: center;
     text-decoration: none;
 }
+a.github{
+    color:black;
+    text-decoration:underline;
+}
 a{
     text-decoration: none;
     color:white;
@@ -100,31 +102,36 @@ a{
         flex-direction:column;
         justify-content: center;
         align-items: center;
-    
+    &__header{
+        margin-top:40px;
+        text-align:justify;
+    }
     &__wrapper{
-        width:100%;
+        width:95%;
         height:70%;
     }
     &__image__container{
-        display:flex;
-/*        position:absolute;
-        top:5%;
-        width:50%;*/
+        display:none;                  
         justify-self:center;
         align-self:center;
     }
 }
 .card{
-    width:250px;
-    height:250px;
+    width:350px;
+    height:350px;
 }
 .card>img{
     position:absolute;
-    width:250px;
-    height:250px;
+    width:350px;
+    height:350px;
     z-index:-1;
 }
 .card>div{
     font-size:14px;
+}
+}
+@media only screen and (max-height:700px){
+.projects__header{
+    margin-top:100px;
 }
 }

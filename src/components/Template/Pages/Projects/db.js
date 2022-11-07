@@ -1,6 +1,6 @@
-import bkg1 from './Projects_Card/proj_card1.png';
-import bkg2 from './Projects_Card/proj_card2.png';
-import bkg3 from './Projects_Card/proj_card3.png';
+import bkg1 from './Projects_Card/proj_card1.webp';
+import bkg2 from './Projects_Card/proj_card2.webp';
+import bkg3 from './Projects_Card/proj_card3.webp';
 
 const projectz = [
     {
