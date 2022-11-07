@@ -1,7 +1,8 @@
-# Frenz personal portofolio website
+# Frenz personal portofolio website [WIP]
 
 Made in #React.js for didactical and fun purpose, this is my modest and unusual website :D <br>
 I've tried to create a cartoon design, focused on mobile experience rather than desktop <br>
+<b>Actually it is in WIP, because i'm improving the desktop experience</b></br>
 
 #Technologies
 
