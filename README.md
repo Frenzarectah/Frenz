@@ -10,4 +10,6 @@ and finally i've learn to use #emailJS to create a valid and functional contact 
 Also, i wanted to use the amazing #animateCss to easily add some effects to my site, the result is really awesome! <br>
 
 Hope you like my work! :)
-Bye!
+Bye! </br>
+If you wanna try it, follow this <a href="https://frenz-dev.netlify.app">link</a>!<br/>
+Enjoy!
