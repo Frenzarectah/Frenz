@@ -7,8 +7,11 @@
     display:flex;
     flex-direction:row;
     align-items:center;
+    justify-content: center;
 
 &__photo{
+    display:flex;
+    align-self: flex-start;
     width:420px;
     height:370px;
 }
