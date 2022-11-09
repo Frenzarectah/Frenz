@@ -20,7 +20,8 @@
     height:20px;
     background-color:transparent;
     border:0px black solid;
-    transition:background-color 1s
+    transition:background-color 1s;
+    z-index:5;
 }
 .actual{
     color:black;
