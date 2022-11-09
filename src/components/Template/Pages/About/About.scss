@@ -2,31 +2,29 @@
     padding:20px;
     height:100vh;
     font-family:"Oswald";
-    font-size: 20px;
     font-weight:bold;
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content: center;
-
-&__photo{
-    display:flex;
-    align-self: flex-start;
-    width:420px;
-    height:370px;
-}
-&__photo img{
-    width:100%;
-    height:auto;
-}
-&__descr{
-    border:8px solid black;
-    border-radius:10px;
-    font-size:20px;
-    background:white;
-    width:65%;
-    padding:10px;
-}
+    &__photo{
+        display:flex;
+        align-self: flex-start;
+        width:420px;
+        height:370px;
+    }
+    &__photo img{
+        width:100%;
+        height:auto;
+    }
+    &__descr{
+        border:8px solid black;
+        border-radius:10px;
+        font-size:1.2rem;
+        background:white;
+        width:65%;
+        padding:10px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -38,20 +36,19 @@
     align-items:center;
     justify-content:center;
     flex-direction:column-reverse;
-
-&__photo{
-    display:flex;
-    width:100%;
-}
-&__photo img{
-    width:100%;
-    height:auto;
-}
-&__descr{
-    width:85%;
-    padding:0 10px; 
-    font-size:15px;
-}
+    &__photo{
+        display:flex;
+        width:100%;
+    }
+    &__photo img{
+        width:100%;
+        height:auto;
+    }
+    &__descr{
+        width:85%;
+        padding:0 10px; 
+        font-size:15px;
+    }
 }
 }
 @media only screen and (max-height: 700px){ 

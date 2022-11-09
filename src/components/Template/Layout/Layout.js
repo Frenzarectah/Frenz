@@ -11,6 +11,13 @@ import About from "../Pages/About/About";
 import Menu from "../../Menu/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+/**
+ * the main "renderer" of the website, here it'll be rendered the menu component,
+ * also here you can find placed the routerDom API, which is responsible of the
+ * rendering of the various page/components according to the Url
+ *
+ * 
+ */
 const Layout = ()=>{
     const iconHome = <FontAwesomeIcon icon={faHome} color="black"/>
     return(

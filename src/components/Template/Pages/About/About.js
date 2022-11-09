@@ -2,6 +2,7 @@ import React from "react";
 import '../../../../App.scss';
 import './About.scss';
 import photo from '../About/mi_star.webp';
+
 const About = () =>{
     return(
         <div className="about">
