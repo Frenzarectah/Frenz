@@ -1,27 +1,22 @@
 @keyframes scrollText {
-  0%   { transform: translate(0, 0); }
+  0%   { transform: translate(100%, 0); }
   100% { transform: translate(-100%, 0); }
 }
-
 .homepage{
     display:flex;
     margin:0;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family:'Erica One';
     color:black;
     height:100vh;
   }
 .roll__text{
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.roll__text > span{
+  width:max-content;
+  height:max-content;
   font-size:20vw;
   display: inline-block;
-  padding-left: 100%;
   animation: scrollText 20s linear infinite;
 }
 .subtitle{
