@@ -9,19 +9,18 @@
     font-weight:bold;
     font-family:"Oswald";
     &_title{
+        display:flex;
+        align-self: center;
         font-size:30px;
     }
     &_image_container{
-        justify-self:center;
-        align-items:center;
-        margin-left:2%;
-        width:20%;
+        display:none;
     }
     &_form{
         display:flex;
         width:60%;
         flex-direction:column;
-        align-items:center;
+        align-items:flex-start;
     }
 }
 ::-webkit-input-placeholder {
