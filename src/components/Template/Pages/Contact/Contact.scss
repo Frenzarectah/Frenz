@@ -9,19 +9,17 @@
     font-weight:bold;
     font-family:"Oswald";
     &_title{
+        margin:10px;
         font-size:30px;
     }
     &_image_container{
-        justify-self:center;
-        align-items:center;
-        margin-left:2%;
-        width:20%;
+        display:none;
     }
     &_form{
         display:flex;
-        width:60%;
+        width:70%;
         flex-direction:column;
-        align-items:center;
+        align-items:flex-start;
     }
 }
 ::-webkit-input-placeholder {
@@ -36,17 +34,16 @@ img{
     height:auto;
 }
 .social{
-    width:20%;
+    width:22%;
     height:50%;
-    &_div{
-        text-align:center;
-        font-size:35px;
-        height:170px;
-        background-image: url(../Projects/empty_baloon.png);
-        background-size: cover;
-    }
     &_icons{
-        width:100%;
+        background-color:#ffffff;
+        width:60%;
+        margin:10px;
+        height:50px;
+        padding:5px;
+        border:5px solid black;
+        border-radius:10px;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
@@ -75,6 +72,7 @@ textarea{
     border-radius:10px;
 }
 button{
+    margin:10px;
     width:100px;
     height:45px;
     font-family:'Erica One';
@@ -102,16 +100,17 @@ button{
     font-family:"Oswald";
 }
 input{
-    width:60%;
+    width:90%;
     height:35px;
 }
 textarea{
-    width:85%;
+    width:95%;
 }
 .social{
     display:flex;
     background:none;
     width:80%;
+    height:5%;
     margin-top:20px;
     flex-direction:row;
     justify-content:space-around;

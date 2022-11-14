@@ -5,7 +5,7 @@ import './Modal.css';
 /**
  * This compt returns a confirm of the form sent by Email.js 
  * (referring to Contact compt).
- * The "visible" props is passed as true when the email returns the
+ * The "visible" props is passed as true from Contact when the email returns the
  * "successfull sent" status
  * 
  */

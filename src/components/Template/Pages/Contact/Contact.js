@@ -23,10 +23,9 @@ const Contact = () =>{
         e.preventDefault();
         emailjs.sendForm('personal', 'template_3ony9qg',referenceForm.current,'B-cYCihSV7vEgvD09')
           .then((result) => {
-              console.log(result.text);
               setVisible(!visible);
           }, (error) => {
-              console.log(error.text);
+              alert(error.text);
           });
     };
 
@@ -39,7 +38,7 @@ const Contact = () =>{
             <form className="contact_form" ref={referenceForm} onSubmit={sendEmail}>
                 <div className="contact_title">Let's Get in Touch!</div>
                 <input name="name" type="text" placeholder="Who r U?" required/>
-                <input name="phone" type="tel" placeholder="leave a phone number..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <input name="phone" type="tel" placeholder="leave a phone number..." pattern="[0-9]{10}" />
                 <input name="mail" type="email" placeholder="...or a mail..." required/>
                 <textarea name="message" type="text" placeholder="...and write something to Frenz" required/> 
                 <button id="submit_form" type="submit">Send!</button>
