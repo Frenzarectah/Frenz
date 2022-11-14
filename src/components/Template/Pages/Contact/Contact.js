@@ -44,8 +44,7 @@ const Contact = () =>{
                 <button id="submit_form" type="submit">Send!</button>
             </form>
         <div className="social">
-            <div className="social_div">Socialize!</div>
-        <div className="social_icons">
+        <div className="social_icons_mobile">
             <a href="https://instagram.com"><div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div></a>
             <a href="https://github.com/Frenzarectah"><div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div></a>
             <a href="https://www.linkedin.com/in/francesco-sorrentino-946981105/"><div className="linkedin animate__animated animate__bounceInDown  animate__delay-2s">{linkedIcon}</div></a>

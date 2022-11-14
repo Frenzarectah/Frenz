@@ -1,5 +1,6 @@
 .contact{
-    margin-top:50px;
+    border: #ff0000 solid 1px;
+    margin-top:10px;
     width:100%;
     height:100vh;
     display:flex;
@@ -12,14 +13,11 @@
         font-size:30px;
     }
     &_image_container{
-        justify-self:center;
-        align-items:center;
-        margin-left:2%;
-        width:20%;
+        display:none;
     }
     &_form{
         display:flex;
-        width:70%;
+        width:60%;
         flex-direction:column;
         align-items:center;
     }
@@ -36,24 +34,19 @@ img{
     height:auto;
 }
 .social{
-    width:22%;
-    height:50%;
-    &_icons{
-        background-color:#ffffff;
-        width:60%;
-        margin:10px;
-        height:50px;
-        padding:5px;
-        border:5px solid black;
-        border-radius:10px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    border:4px black solid;
+    background-color: white;
+    border-radius: 5px;
+    width:10%;
+    height:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 input{
     background-color:#ffffff;
-    width:60%;
+    width:70%;
     margin:10px;
     font-family:"Oswald";
     font-size:40px;
@@ -123,7 +116,10 @@ textarea{
     &_div{
         display:none;
     }
-    &_icons{
+    &_icons_mobile{
+        width:100%;
+        display:flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 }
@@ -137,6 +133,5 @@ textarea{
 }
 .contact_image_container{
     margin-top:15vh;
-
 }
 }
