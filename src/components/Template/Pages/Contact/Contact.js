@@ -37,9 +37,9 @@ const Contact = () =>{
                 <img alt="contact baloon logo" src={img_contact}/>
             </div>
             <form className="contact_form" ref={referenceForm} onSubmit={sendEmail}>
-                <div className="contact_title">Let's Get in Touch!</div>
+            <div className="contact_title">Let's Get in Touch!</div>
                 <input name="name" type="text" placeholder="Who r U?" required/>
-                <input name="phone" type="tel" placeholder="leave a phone number..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <input name="phone" type="tel" placeholder="leave a phone number..." pattern="[0-9]{10}"/>
                 <input name="mail" type="email" placeholder="...or a mail..." required/>
                 <textarea name="message" type="text" placeholder="...and write something to Frenz" required/> 
                 <button id="submit_form" type="submit">Send!</button>

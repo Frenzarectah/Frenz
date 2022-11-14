@@ -83,11 +83,14 @@ button{
 }
 @media only screen and (max-width: 600px) {
 .contact{
-    margin-top:50px;
     flex-direction:column;
+    justify-content: center;
+    align-items: center;
     width:100%;
+    height:max-content;
     &_form{
         width:90%;
+        height:80%;
         align-items: center;
     }
     &_image_container{
@@ -96,16 +99,17 @@ button{
     }
 }
 ::-webkit-input-placeholder {
-    font-size:20px;
+    font-size:30px;
     font-weight:bold;
     font-family:"Oswald";
 }
 input{
-    width:60%;
-    height:35px;
+    width:80%;
+    height:70px;
 }
 textarea{
-    width:85%;
+    width:90%;
+    height:140px;
 }
 .social{
     display:flex;
@@ -127,7 +131,11 @@ textarea{
 }
 }
 @media only screen and (max-height: 700px) {
+.contact{
+    padding-top:70px;
+}
 .contact_image_container{
     margin-top:15vh;
+
 }
 }
