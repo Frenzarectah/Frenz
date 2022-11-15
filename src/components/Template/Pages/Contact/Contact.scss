@@ -127,6 +127,9 @@ textarea{
         flex-direction: row;
         justify-content: space-between;
     }
+    &_desktop{
+        display:none;
+    }
 }
 .insta,.linkedin,.git{
     position:static;
