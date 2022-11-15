@@ -2,17 +2,18 @@ import React, { useRef,useState } from "react";
 import './Contact.scss';
 import '../../../../App.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram,faGithub,faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import emailjs from '@emailjs/browser';
 import Modal from "../../Modals/Modal";
 import img_contact from '../Contact/contact_baloon.webp'; 
+import { faPhoneVolume,faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
 
 const instaIcon = <FontAwesomeIcon icon={faInstagram} color="black" size="3x"/>
 const gitIcon = <FontAwesomeIcon icon={faGithub} color="black" size="3x"/>
 const linkedIcon = <FontAwesomeIcon icon={faLinkedin} color="black" size="3x"/>
+const phoneIcon = <FontAwesomeIcon icon={faPhoneVolume} color="black" size="2x"/>
+const locationIcon = <FontAwesomeIcon icon={faLocationDot} color="black" size="2x"/>
 
 const Contact = () =>{
     
@@ -44,6 +45,10 @@ const Contact = () =>{
                 <button id="submit_form" type="submit">Send!</button>
             </form>
         <div className="social">
+            <div className="social_desktop">
+                <div>{phoneIcon}  (+39)3287587325</div>
+                <div>{locationIcon} Milan, Italy</div>
+            </div>
         <div className="social_icons_mobile">
             <a href="https://instagram.com"><div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div></a>
             <a href="https://github.com/Frenzarectah"><div className="git animate__animated animate__bounceInDown  animate__delay-3s">{gitIcon}</div></a>

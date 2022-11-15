@@ -34,15 +34,20 @@ img{
     height:auto;
 }
 .social{
+    padding:10px;
     border:4px black solid;
     background-color: white;
     border-radius: 5px;
-    width:10%;
-    height:30%;
+    width:max-content;
+    height:max-content;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &_desktop{
+        display:flex;
+        flex-direction: column;
+    }
 }
 input{
     background-color:#ffffff;
