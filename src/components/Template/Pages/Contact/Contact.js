@@ -46,8 +46,8 @@ const Contact = () =>{
             </form>
         <div className="social">
             <div className="social_desktop">
-                <div>{phoneIcon}  (+39)3287587325</div>
-                <div>{locationIcon} Milan, Italy</div>
+                <div><span>{phoneIcon}</span><span>3287587325</span></div>
+                <div><span>{locationIcon}</span><span>Milan, Italy</span></div>
             </div>
         <div className="social_icons_mobile">
             <a href="https://instagram.com"><div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div></a>

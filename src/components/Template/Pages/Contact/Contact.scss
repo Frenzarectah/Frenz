@@ -14,10 +14,11 @@
     }
     &_image_container{
         display:none;
+        width:0%;
     }
     &_form{
         display:flex;
-        width:60%;
+        width:50%;
         flex-direction:column;
         align-items:center;
     }
@@ -37,16 +38,32 @@ img{
     padding:10px;
     border:4px black solid;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     width:max-content;
     height:max-content;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &_icons_mobile{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     &_desktop{
         display:flex;
         flex-direction: column;
+        align-items: flex-start;
+    }
+    &_desktop div{
+        font-size:20px;
+        margin:10px;
+        display:flex;
+        justify-content: space-between;
+    }
+    &_desktop div span{
+        margin-left:5px;
     }
 }
 input{
@@ -78,7 +95,12 @@ button{
     font-family:'Erica One';
     font-size:20px;
     border:4px black solid;
+    border-radius: 10px;
     background-color:#ff0000;
+    transition: background-color 1s;
+}
+button:hover{
+    background-color:#ffffff;
 }
 @media only screen and (max-width: 600px) {
 .contact{
@@ -112,6 +134,7 @@ textarea{
 .social{
     display:flex;
     background:none;
+    border:none;
     width:80%;
     height:5%;
     margin-top:20px;

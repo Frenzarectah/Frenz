@@ -1,7 +1,7 @@
 import {React , useState} from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHamburger,faHome} from "@fortawesome/free-solid-svg-icons";
+import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 import './Menu.css';
 
 const Menu = ()=>{
@@ -14,7 +14,6 @@ const Menu = ()=>{
             return(<FontAwesomeIcon icon={faHamburger} color="black" size="3x"/>
         )}
     }
-    const homeIcon = <FontAwesomeIcon icon={faHome} color="black" size="1x"/>
     let cln = "menu__container ";
       if(view)cln+="entering";
         return(
