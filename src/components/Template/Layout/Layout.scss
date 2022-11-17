@@ -21,3 +21,8 @@ button#submit_form{
     display:block;
 }  
 }
+@media only screen and (max-height:700px){
+.main_container{
+    padding-top:20px;
+}
+}

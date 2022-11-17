@@ -19,6 +19,7 @@
       animation: scrollText 20s linear infinite;
   }
   &__subtitle{
+      width:max-content;
       font-family:"Newsreader";
       display:flex;
       font-weight:bold;
@@ -46,7 +47,7 @@
       width:50%;
       text-align:center;
       display:flex;
-      font-size:1.2rem;
+      font-size:1rem;
       flex-direction:column;
       justify-content:center;
       align-items:center;
