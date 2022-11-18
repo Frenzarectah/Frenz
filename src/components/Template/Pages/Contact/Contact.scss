@@ -114,6 +114,7 @@ button:hover{
         align-items: center;
     }
     &_image_container{
+        display:block;
         width:50%;
         height:auto;
     }
@@ -124,11 +125,11 @@ button:hover{
     font-family:"Oswald";
 }
 input{
-    width:60%;
+    width:90%;
     height:35px;
 }
 textarea{
-    width:85%;
+    width:90%;
 }
 .social{
     display:flex;
@@ -162,6 +163,7 @@ textarea{
     padding-top:70px;
 }
 .contact_image_container{
+    display:block;
     margin-top:15vh;
 }
 }
