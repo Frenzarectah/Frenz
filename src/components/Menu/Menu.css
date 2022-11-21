@@ -4,7 +4,7 @@
     position:absolute;
     margin:20px;
   }
-.menu__container ul{
+nav ul{
     display:flex;
     flex-direction:row;
     position:absolute; 
@@ -39,7 +39,7 @@
     top:0;
     z-index:10;
 }
-.menu__container{
+nav{
     display:block;
     width:0vw;
     height:110vh;
@@ -54,7 +54,7 @@
 .entering{
     width:50vw;
 }
-.menu__container ul{
+nav ul{
     display:flex;
     flex-direction:column;
     list-style-type:none;

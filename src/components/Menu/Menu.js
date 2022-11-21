@@ -24,15 +24,13 @@ const Menu = ()=>{
             return(<FontAwesomeIcon icon={faHamburger} color="black" size="3x"/>
         )}
     }
-    let cln = "menu__container ";
-      if(view)cln+="entering";
         return(
             <>
             <div className="menu animate__animated animate__shakeX animate__delay-2s" 
                  onClick={()=>setView(!view)}>
                 {hambMenu(view)}
             </div>
-            <nav className={cln}>
+            <nav className={(view?"entering":undefined)}>
                 <ul>    
                     <NavLink exact="true" className="link" to="/" onClick={()=>setView(!view)}><li>home</li></NavLink>
                     <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/whoami" onClick={()=>setView(!view)}><li>about</li></NavLink>
