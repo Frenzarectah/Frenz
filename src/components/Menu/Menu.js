@@ -4,6 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 import './Menu.css';
 
+/**
+ * this component renders the menu of the website, it is styled differently with mediaqueries to be
+ * as much responsive as I can.
+ * Its internal state refers to the opened/closed menu on mobile, and isn't working on 
+ * desktop mode.
+ * Uses react-router-dom api to load the different pages/components.
+ * line 20 is for the color-changing of the burger icon, in order to be always visible, according 
+ *   to the state open/closed of the menu
+ */
+
 const Menu = ()=>{
     const [view,setView] = useState(false);
     
@@ -18,7 +28,8 @@ const Menu = ()=>{
       if(view)cln+="entering";
         return(
             <>
-            <div className="menu animate__animated animate__shakeX animate__delay-2s" onClick={()=>setView(!view)}>
+            <div className="menu animate__animated animate__shakeX animate__delay-2s" 
+                 onClick={()=>setView(!view)}>
                 {hambMenu(view)}
             </div>
             <nav className={cln}>
