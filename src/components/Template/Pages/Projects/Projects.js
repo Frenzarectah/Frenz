@@ -23,7 +23,7 @@ const Project = () =>{
                     {projList}
                 </div>
             </div>
-            <img className="projects__image__container animate__animated animate__heartBeat animate__infinite infinite animate__slower" src={project_baloon}/>
+            <img alt="project baloon" className="projects__image__container animate__animated animate__heartBeat animate__infinite infinite animate__slower" src={project_baloon}/>
         </div>
     )
 }
