@@ -19,8 +19,8 @@ const Project = () =>{
             <p className="projects__header">
                 Here's Frenz's Projects as a wild and free FrontEnd Dev in his way
                 to become a professionist and no longer a liar :D <br/>
-                If you wanna see "behind the scenes", feel free to visit my 
-                <a className="github" href="https://github.com/Frenzarectah">github</a> profile!<br/>
+                If you wanna see "behind the scenes", feel free to visit 
+                my <a className="github" href="https://github.com/Frenzarectah">github</a> profile!<br/>
                 Stay Tuned and let me know what u think!<br/>
                 Peace!
             </p>

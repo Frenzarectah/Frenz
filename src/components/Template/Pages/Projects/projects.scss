@@ -18,6 +18,7 @@
 }
 &__wrapper{
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding:10px; 
@@ -32,11 +33,9 @@
     box-sizing: border-box;    
 }
 &__cards{
-    display:inline-flex;
+    display:flex;
     flex-direction: row;
-    align-items: center;
-    padding-left: 100%;
-    animation: scroll 20s linear infinite;
+    animation: scrollText 25s linear infinite;
 }
 &__cards:hover{
     animation-play-state: paused;
@@ -75,9 +74,10 @@ a.github{
     height:300px;
     z-index:-1;
 }
-.card>div{
+.card div{
     background-color:black;
     color:white;
+    font-size:25px;
     display:flex;
     justify-content: center;
     text-decoration: none;
