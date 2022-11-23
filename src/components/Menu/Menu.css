@@ -68,12 +68,10 @@ nav ul{
     text-decoration:none;
 }
 .link:hover{
-    background-color:transparent !important;
+    background-color:transparent;
 }
 .actual{
     color:white;
-    text-decoration-line: underline;
-    text-decoration-color: white;
-
+    width:fit-content;
 }
 }

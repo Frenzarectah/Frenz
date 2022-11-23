@@ -32,7 +32,7 @@ const Menu = ()=>{
             </div>
             <nav className={(view?"entering":undefined)}>
                 <ul>    
-                    <NavLink exact="true" className="link" to="/" onClick={()=>setView(!view)}>
+                    <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/" onClick={()=>setView(!view)}>
                         <li>home</li></NavLink>
                     <NavLink exact="true" className={({ isActive }) => (isActive ? "actual" : "link")} to="/whoami" onClick={()=>setView(!view)}>
                         <li>about</li></NavLink>
