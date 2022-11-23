@@ -1,7 +1,7 @@
-import bkg1 from './Projects_Card/proj_card1.webp';
-import bkg2 from './Projects_Card/proj_card2.webp';
-import bkg3 from './Projects_Card/proj_card3.webp';
-import bkg4 from './Projects_Card/proj_card4.webp';
+import bkg1 from './Projects_Card/proj_card1.webp'
+import bkg2 from './Projects_Card/proj_card2.webp'
+import bkg3 from './Projects_Card/proj_card3.webp'
+import bkg4 from './Projects_Card/proj_card4.webp'
 const projectz = [
     {
         id:0,
@@ -31,4 +31,4 @@ const projectz = [
         link:"https://skyweather-frenz.netlify.app"           
     }
 ]
-export default projectz ;
+export default projectz 

@@ -1,13 +1,13 @@
 import {React } from "react"
-import '../../../App.scss';
-import './Layout.scss';
-import {Route, Routes } from 'react-router-dom';
-import Homepage from '../Pages/Homepage/Homepage';
-import Contact from "../Pages/Contact/Contact";
-import Projects from "../Pages/Projects/Projects";
-import Blog from "../Pages/Blog/Blog";
-import About from "../Pages/About/About";
-import Menu from "../../Menu/Menu";
+import '../../../App.scss'
+import './Layout.scss'
+import {Route, Routes } from 'react-router-dom'
+import Homepage from '../Pages/Homepage/Homepage'
+import Contact from "../Pages/Contact/Contact"
+import Projects from "../Pages/Projects/Projects"
+import Blog from "../Pages/Blog/Blog"
+import About from "../Pages/About/About"
+import Menu from "../../Menu/Menu"
 
 /**
  * the main "renderer" of the website, here it'll be rendered the menu component,
@@ -19,17 +19,17 @@ import Menu from "../../Menu/Menu";
 const Layout = ()=>{
     return(
         <>
-        <Menu/>
-        <div className="main_container">
-            <Routes>
-                <Route path="/" element={<Homepage/>}/>
-                <Route path="/whoami" element={<About/>}/>
-                <Route path="/projects" element={<Projects/>}/>
-                <Route path="/blog" element={<Blog/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-            </Routes>
-        </div>
+            <Menu/>
+            <div className="main_container">
+                <Routes>
+                    <Route path="/" element={<Homepage/>}/>
+                    <Route path="/whoami" element={<About/>}/>
+                    <Route path="/projects" element={<Projects/>}/>
+                    <Route path="/blog" element={<Blog/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                </Routes>
+            </div>
         </>
     )
 }
-export default Layout;
+export default Layout
