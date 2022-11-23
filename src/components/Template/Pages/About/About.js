@@ -1,7 +1,7 @@
-import React from "react";
-import '../../../../App.scss';
-import './About.scss';
-import photo from '../About/mi_star.webp';
+import React from "react"
+import '../../../../App.scss'
+import './About.scss'
+import photo from '../About/mi_star.svg'
 
 const About = () =>{
     return(
@@ -30,4 +30,4 @@ const About = () =>{
         </div>
     )
 }
-export default About;
+export default About

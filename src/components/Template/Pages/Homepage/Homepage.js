@@ -1,8 +1,8 @@
-import React from "react";
-import '../../../../App.scss';
-import './Homepage.scss';
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+import '../../../../App.scss'
+import './Homepage.scss'
+import { faStar } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Homepage = ()=>{
     const iconstar = <FontAwesomeIcon icon={faStar} color="black"/>
@@ -19,4 +19,4 @@ const Homepage = ()=>{
         
     )
 }
-export default Homepage;
+export default Homepage
