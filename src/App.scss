@@ -1,27 +1,29 @@
 @import 'animate.css';
 
 $primary-color: yellow;
-$page-standard-height:80vh;
-
+$page-standard-h-desktop:80vh;
+$page-standard-h-mobile:100vh;
 html,body{
   width:100%;
   height:100%;
   background-color: $primary-color;
   overflow:hidden;
+  cursor:crosshair;
 }
 body{
   margin:auto;
   position:relative;
 }
+.page{
+  height:$page-standard-h-desktop;
+}
 @media only screen and (max-width: 600px) {
 
+.page{
+    height:$page-standard-h-mobile;
+}
 html,body{
   margin:0;
   overflow-y:scroll !important;
 }
 }
-
-
-
-
-

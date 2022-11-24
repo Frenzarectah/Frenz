@@ -4,10 +4,16 @@ import './Homepage.scss'
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+/**
+ * This component return the landing page of the site, with the scrolling text and 
+ * the subtitle in a newspaper style
+ * 
+ */
+
 const Homepage = ()=>{
     const iconstar = <FontAwesomeIcon icon={faStar} color="black"/>
     return(
-        <div className="homepage">
+        <div className="homepage page">
             <span className="homepage__text">
                 FRENZ {iconstar} SORRENTINO
             </span>
