@@ -57,6 +57,7 @@ nav{
 nav ul{
     display:flex;
     flex-direction:column;
+    gap:10px;
     list-style-type:none;
     margin-top:100px;
     margin-left:5px;
@@ -64,6 +65,7 @@ nav ul{
 }
 .link{
     width:100%;
+    height: fit-content;
     color:white;
     text-decoration:none;
 }
@@ -72,6 +74,5 @@ nav ul{
 }
 .actual{
     color:white;
-    width:fit-content;
 }
 }
