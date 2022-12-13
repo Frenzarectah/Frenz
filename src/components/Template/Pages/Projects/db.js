@@ -2,6 +2,11 @@ import bkg1 from './Projects_Card/proj_card1.webp'
 import bkg2 from './Projects_Card/proj_card2.webp'
 import bkg3 from './Projects_Card/proj_card3.webp'
 import bkg4 from './Projects_Card/proj_card4.webp'
+
+/**
+ * this file is a kind of mockup API used to simulate a database o
+ */
+
 const projectz = [
     {
         id:0,

@@ -37,7 +37,7 @@ const Contact = () =>{
     }
 
     return(
-        <div className="contact">
+        <div className="contact page">
             <Modal visible={visible}/>
             <div className="contact_image_container animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
                 <img alt="contact baloon logo" src={img_contact}/>
@@ -48,9 +48,8 @@ const Contact = () =>{
                 <input name="phone" type="tel" placeholder="leave a phone number..." pattern="[0-9]{10}" />
                 <input name="mail" type="email" placeholder="...or a mail..." required/>
                 <textarea name="message" type="text" placeholder="...and write something to Frenz" required/> 
-                <button id="submit_form" type="submit">Send!</button>
+                <button type="submit">Send!</button>
             </form>
-            <div></div>
             <div className="social">
                 <div className="social_desktop">
                     <span className="contact_title">...Or use this stuff!</span>

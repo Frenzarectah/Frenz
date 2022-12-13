@@ -5,7 +5,7 @@ import photo from '../About/mi_star.svg'
 
 const About = () =>{
     return(
-        <div className="about">
+        <div className="about page">
             <div className="about__descr">
                 <p>
                     Born in '87 in the famous south-italy city called Bari, became interested in Programming
