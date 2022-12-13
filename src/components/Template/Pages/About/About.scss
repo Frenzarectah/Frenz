@@ -16,6 +16,7 @@
     &__photo img{
         width:100%;
         height:auto;
+        filter:drop-shadow(10px 10px 10px black)
     }
     &__descr{
         border:8px solid black;

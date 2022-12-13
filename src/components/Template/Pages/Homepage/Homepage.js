@@ -12,8 +12,8 @@ const Homepage = ()=>{
                 FRENZ {iconstar} SORRENTINO
             </span>
             <div className="homepage__subtitle">
-                <span>"Talented, Brilliant, Incredible and Amazing <s>FRONTEND DEVELOPER</s> liar"</span>
-                <span>-New York Times</span>
+                <span>"Talented, Brilliant, Incredible and Amazing <s>FRONTEND DEVELOPER</s> liar" </span>
+                <span>&nbsp;-New York Times</span>
             </div>
         </div>
         
