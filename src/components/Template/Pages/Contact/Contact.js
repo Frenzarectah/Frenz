@@ -54,10 +54,10 @@ const Contact = () =>{
                 <div className="social_desktop">
                     <span className="contact_title">...Or use this stuff!</span>
                     <div><span>{phoneIcon}</span><span>3287587325</span></div>
-                    <div><span>{locationIcon}</span><span>Milan, Italy</span></div>
+                    <div><span>{locationIcon}</span><span>Verona, Italy</span></div>
                 </div>
                 <div className="social_icons_mobile">
-                    <a href="https://instagram.com">
+                    <a href="https://instagram.com/frenzarectah/">
                         <div className="insta animate__animated animate__bounceInDown  animate__delay-1s">{instaIcon}</div>
                     </a>
                     <a href="https://github.com/Frenzarectah">
