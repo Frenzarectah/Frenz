@@ -20,8 +20,11 @@ const About = () =>{
                     of his knowledge follows this concept.
                 </p>
                 <p>
-                    He hopes to be hired by a wideopen-minded company which takes care about his people and focusing on continuos training
-                    and gives the possibility to grow together.
+                    On march 2023 arrived an opportunity to work into a mid-size ecommerce agency in Verona, as a fullstack developer, he didn't think twice 
+                    about that, anyway his heart remains frontend-cored :D
+                </p>
+                <p>
+                    He hopes to grow without limits, discovering different languages, frameworks and so on in this wonderful world :>
                 </p>
             </div>
             <div className="about__photo animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
