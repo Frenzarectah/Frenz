@@ -54,6 +54,7 @@
 }
 @media only screen and (min-width:600) and (max-width:1400px){
     .about__photo{
+        border:1px black solid;
         display:flex;
         align-items:center; 
     }
