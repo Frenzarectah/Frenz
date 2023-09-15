@@ -8,7 +8,7 @@ import '../projects.scss'
  */
 const ProjectCard = (props) =>{
     const style = {
-        fontSize: "1.5rem"
+        fontSize: "1rem"
     }
     const {name,stack,image,link,id} = props
     return(
