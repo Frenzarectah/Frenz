@@ -106,6 +106,7 @@ a{
     &__header{
         height:30%;
         margin-top:90px;
+        margin-bottom:10px;
     }
     &__wrapper{
         height:70%;
@@ -132,7 +133,9 @@ a{
 }
 }
 @media only screen and (max-height:700px){
-
+.projects__header{
+    margin-bottom:10px;
+}
 .card{
     width:270px;
     height:270px;
