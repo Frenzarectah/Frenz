@@ -7,13 +7,16 @@ import '../projects.scss'
  * into another component by mapping them.
  */
 const ProjectCard = (props) =>{
+    const style = {
+        size: "2rem"
+    }
     const {name,stack,image,link,id} = props
     return(
         <a href={link}>
             <div id={id} key={id} className="card">
                 <img alt="thumbnail" src={image}/>
-                <div>{name}</div>
-                <div>{stack}</div>
+                <div style={style}>{name}</div>
+                <div style={style}>{stack}</div>
             </div>
         </a>
     )
