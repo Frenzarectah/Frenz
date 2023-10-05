@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -35,16 +36,35 @@
       "react-app/jest"
     ],
     "rules": {
-      "semi": ["error", "never"],
-      "max-len": ["error", { "code": 160 }],
-      "indent": ["error", 4],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 160
+        }
+      ],
+      "indent": [
+        "error",
+        4
+      ],
       "no-restricted-exports": "off",
-      "comma-dangle": ["error", "never"],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
       "object-curly-newline": "off",
       "no-use-before-define": "off",
       "react/jsx-props-no-spreading": "off",
       "import/extensions": "off",
-      "react/function-component-definition": [2, { "namedComponents": "arrow-function" }]
+      "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function"
+        }
+      ]
     }
   },
   "browserslist": {
