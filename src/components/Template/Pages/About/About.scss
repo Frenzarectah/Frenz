@@ -1,6 +1,6 @@
 .about{
     padding:20px;
-    height:100vh;
+    height:100%;
     font-family:"Oswald";
     font-weight:bold;
     display:flex;
@@ -9,7 +9,7 @@
     justify-content: center;
     &__photo{
         display:flex;
-        align-self: flex-start;
+        align-self: center;
         width:420px;
         height:370px;
     }
@@ -52,13 +52,10 @@
     }
 }
 }
-@media only screen and (max-height: 700px){ 
-.about__photo{
-    margin-top:15vh;
-}
-}
 @media only screen and (min-width:600) and (max-width:1400px){
     .about__photo{
-        margin-top:50%;    
+        border:1px black solid;
+        display:flex;
+        align-items:center; 
     }
 }
