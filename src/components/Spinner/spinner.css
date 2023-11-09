@@ -88,6 +88,10 @@
 @media only screen and (min-width: 431px) and (max-width: 900px ) {
   .content{
     left:65%;
-  }
-  
-  }
+  }  
+}
+@media only screen and (min-width: 901px) {
+  .content{
+    left:70%;
+  }  
+}
