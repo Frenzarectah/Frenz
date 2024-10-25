@@ -28,7 +28,7 @@ const Contact = () =>{
 
     const sendEmail =(e)=>{
         e.preventDefault()
-        emailjs.sendForm('personal', 'template_3ony9qg',referenceForm.current,'B-cYCihSV7vEgvD09')
+        emailjs.sendForm('personal', 'template_3ony9qg',referenceForm.current,'_kTRy8nd45oHlJ_Mu')
             .then((result) => {
                 setVisible(!visible)
             }, (error) => {
