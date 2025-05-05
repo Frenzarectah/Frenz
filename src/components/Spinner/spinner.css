@@ -1,7 +1,10 @@
 .loader {
-  width: 50%;
-  height: 50%;
-  position: relative;
+    width: min(400px, 80%);
+    height: min(400px, 80%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .loader::before {
   content: '';
