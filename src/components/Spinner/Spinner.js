@@ -3,7 +3,7 @@ import './spinner.css'
 const Spinner = () =>{
 
     return(
-        <span class="loader"></span>
+        <div>Loading....</div>
     )
 }
 export default Spinner
