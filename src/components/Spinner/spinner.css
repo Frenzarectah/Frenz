@@ -1,106 +1,58 @@
 .content {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: block;
-} 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
-.player_one {
+.player_one, .player_two {
     height: 70px;
     width: 10px;
     border-radius: 25px;
     background-color: black;
     position: relative;
-    left: -180px;
+}
+
+.player_one {
+    transform: translateX(-180px);
     animation: movePaddleOne 4s infinite;
 }
 
 .player_two {
-    height: 70px;
-    width: 10px;
-    border-radius: 25px;
-    background-color: black;
-    position: relative;
-    left: 20px;
+    transform: translateX(180px);
     animation: movePaddleTwo 4s infinite;
 }
 
 .ball {
-    position: relative;
     height: 12px;
     width: 12px;
     border-radius: 50%;
     background-color: black;
+    position: relative;
     animation: moveBall 4s infinite linear;
 }
 
 @keyframes movePaddleOne {
-    0%, 100% {
-        transform: translate(0px, 120px);
-    }
-    25% {
-        transform: translate(0px, 0px);
-    }
-    50% {
-        transform: translate(0px, 30px);
-    }
-    75% {
-        transform: translate(0px, 100px);
-    }
+    0%, 100% { transform: translateX(-180px) translateY(120px); }
+    25%     { transform: translateX(-180px) translateY(0px); }
+    50%     { transform: translateX(-180px) translateY(30px); }
+    75%     { transform: translateX(-180px) translateY(100px); }
 }
 
 @keyframes movePaddleTwo {
-    0%, 100% {
-        transform: translate(0px, -50px);
-    }
-    25% {
-        transform: translate(0px, 10px);
-    }
-    50% {
-        transform: translate(0px, 0px);
-    }
-    75% {
-        transform: translate(0px, 50px);
-    }
+    0%, 100% { transform: translateX(180px) translateY(-50px); }
+    25%     { transform: translateX(180px) translateY(10px); }
+    50%     { transform: translateX(180px) translateY(0px); }
+    75%     { transform: translateX(180px) translateY(50px); }
 }
 
 @keyframes moveBall {
-    0%, 100% {
-        transform: translate(-180px, 30px);
-    }
-    25% {
-        transform: translate(18px, -25px);
-    }
-    50% {
-        transform: translate(-180px, -55px);
-    }
-    75% {
-        transform: translate(18px, 15px);
-    }
-}
-
-/* Media queries to ensure .content is centered */
-@media screen and (max-width: 430px) {
-    .content {
-        left: 50%;
-    }
-}
-
-@media only screen and (min-width: 431px) and (max-width: 900px) {
-    .content {
-        left: 50%;
-    }  
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1500px) {
-    .content {
-        left: 50%;
-    }  
-}
-
-@media only screen and (min-width: 1501px) {
-    .content {
-        left: 50%;
-    }  
+    0%, 100% { transform: translate(0px, 30px); }
+    25%     { transform: translate(0px, -25px); }
+    50%     { transform: translate(0px, -55px); }
+    75%     { transform: translate(0px, 15px); }
 }
