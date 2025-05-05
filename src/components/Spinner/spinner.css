@@ -1,63 +1,59 @@
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 200px;
+.loader {
+  width: 50px;
+  height: 165px;
+  position: relative;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50% , 0);
+  width: 16px;
+  height: 16px;
+  background: yellow;
+  border-radius: 50%;
+  animation: bounce 2s linear infinite;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 48px;
+  width: 48px;
+  background: #fff;
+  border-radius: 4px;
+  animation: rotate 2s linear infinite;
 }
 
-.player_one {
-    height: 70px;
-    width: 10px;
-    border-radius: 25px;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: 65px;
-    animation: movePaddleOne 4s infinite;
-}
-
-.player_two {
-    height: 70px;
-    width: 10px;
-    border-radius: 25px;
-    background-color: black;
-    position: absolute;
-    right: 0;
-    top: 65px;
-    animation: movePaddleTwo 4s infinite;
-}
-
-.ball {
+@keyframes bounce {
+  0% , 50% , 100%{
+    transform: translate(-50%, 0px);
+    height: 20px;
+  }
+  20% {
+    transform: translate(-25%, 85px);
+    height: 28px;
+  }
+  25% {
+    transform: translate(-25%, 110px);
     height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: 80px;
-    animation: moveBall 4s infinite linear;
+  }
+  70% {
+    transform: translate(-75%, 85px);
+    height: 28px;
+  }
+  75% {
+    transform: translate(-75%, 108px);
+    height: 12px;
+  }
 }
-
-@keyframes movePaddleOne {
-    0%, 100% { top: 120px; }
-    25% { top: 0px; }
-    50% { top: 30px; }
-    75% { top: 100px; }
+@keyframes rotate {
+  0% , 50% , 100%{ transform: rotate(0deg)}
+  25% { transform: rotate(90deg)}
+  75%{ transform: rotate(-90deg)}
 }
-
-@keyframes movePaddleTwo {
-    0%, 100% { top: 20px; }
-    25% { top: 60px; }
-    50% { top: 50px; }
-    75% { top: 100px; }
-}
-
-@keyframes moveBall {
-    0% { left: 0; top: 80px; }
-    25% { left: calc(100% - 12px); top: 60px; }
-    50% { left: 0; top: 40px; }
-    75% { left: calc(100% - 12px); top: 100px; }
-    100% { left: 0; top: 80px; }
-}
+  
