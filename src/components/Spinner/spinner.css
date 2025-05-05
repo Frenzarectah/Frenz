@@ -1,70 +1,27 @@
 .loader {
+    position: fixed;
     width: min(400px, 80%);
     height: min(400px, 80%);
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0);
+    background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
+    animation: rikSpikeRoll 0.65s linear infinite alternate;
+  }
+@keyframes rikSpikeRoll {
+  0% { background-size: 10px 3px;}
+  16% { background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
+  33% { background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
+  50% { background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px}
+  66% { background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px}
+  83% { background-size: 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px, 10px 3px}
+  100% { background-size: 10px 3px, 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px}
 }
-
-.loader::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
-    width: 16px;
-    height: 16px;
-    background: #000000;
-    border-radius: 50%;
-    animation: bounce 2s linear infinite;
-}
-
-.loader::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px; /* Avvicinato per far toccare la pallina */
-    margin: auto;
-    height: 48px;
-    width: 48px;
-    background: #ffffff;
-    border-radius: 4px;
-    animation: rotate 2s linear infinite;
-}
-
-@keyframes bounce {
-    0%, 50%, 100% {
-        transform: translate(-50%, 0px);
-        height: 20px;
-    }
-    20% {
-        transform: translate(-25%, 50px);
-        height: 24px;
-    }
-    25% {
-        transform: translate(-25%, 65px);
-        height: 12px;
-    }
-    70% {
-        transform: translate(-75%, 50px);
-        height: 24px;
-    }
-    75% {
-        transform: translate(-75%, 65px);
-        height: 12px;
-    }
-}
-
-@keyframes rotate {
-    0%, 50%, 100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(90deg);
-    }
-    75% {
-        transform: rotate(-90deg);
-    }
-}
+    
