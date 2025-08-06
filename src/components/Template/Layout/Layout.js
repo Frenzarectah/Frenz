@@ -1,7 +1,8 @@
-import {React } from "react"
+import { React } from "react"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 import '../../../App.scss'
 import './Layout.scss'
-import {Route, Routes } from 'react-router-dom'
+import {Route, Routes, useLocation } from 'react-router-dom'
 import Homepage from '../Pages/Homepage/Homepage'
 import Contact from "../Pages/Contact/Contact"
 import Projects from "../Pages/Projects/Projects"
@@ -17,17 +18,27 @@ import Menu from "../../Menu/Menu"
  *
  */
 const Layout = ()=>{
+    const location = useLocation()
     return(
         <>
             <Menu/>
             <div className="main_container">
-                <Routes>
-                    <Route path="/" element={<Homepage/>}/>
-                    <Route path="/whoami" element={<About/>}/>
-                    <Route path="/projects" element={<Projects/>}/>
-                    <Route path="/blog" element={<Blog/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                </Routes>
+                <TransitionGroup component={null}>
+                    <CSSTransition
+                        key={location.pathname}
+                        classNames="fade"
+                        timeout={1000}
+                        unmountOnExit
+                    >
+                        <Routes location={location}>
+                            <Route path="/" element={<Homepage/>}/>
+                            <Route path="/whoami" element={<About/>}/>
+                            <Route path="/projects" element={<Projects/>}/>
+                            <Route path="/blog" element={<Blog/>}/>
+                            <Route path="/contact" element={<Contact/>}/>
+                        </Routes>
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
         </>
     )
