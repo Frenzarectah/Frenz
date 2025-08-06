@@ -24,4 +24,24 @@
   83% { background-size: 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px, 10px 3px}
   100% { background-size: 10px 3px, 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px}
 }
-    
+
+@media only screen and (max-width: 500px) {
+.loader {
+    position: fixed;
+    width:300px;
+    height:300px;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}   
+}
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+.loader {
+    position: fixed;
+    width:300px;
+    height:300px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}  
+}
