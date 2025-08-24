@@ -7,7 +7,11 @@ import '../projects.scss'
  * into another component by mapping them.
  */
 const ProjectCard = (props) =>{
+    
     const style = {
+        fontSize: "0.90rem"
+    }
+    const stack_style = {
         fontSize: "0.70rem"
     }
     const {name,stack,image,link,id} = props
@@ -16,7 +20,7 @@ const ProjectCard = (props) =>{
             <div id={id} key={id} className="card">
                 <img alt="thumbnail" src={image}/>
                 <div style={style}>{name}</div>
-                <div style={style}>{stack}</div>
+                <div style={stack_style}>{stack}</div>
             </div>
         </a>
     )
