@@ -3,7 +3,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-40%, 0);
+    transform: translate(-80%, 0);
   }
 }
 
@@ -12,7 +12,6 @@
   padding: 20px;
   margin: 5rem 0 1.5rem 0;
   font-family: "Oswald";
-  font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem);
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,6 @@
   &__header {
     width: 80%;
     margin-bottom: 2rem;
-    font-size: clamp(0.9rem, 1vw + 0.3rem, 1.2rem);
     text-align: left;
     line-height: 1.4;
   }
@@ -34,7 +32,6 @@
     padding: 10px;
     border: 8px solid black;
     border-radius: 10px;
-    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
     background: white;
     width: 80%;
     min-height: 200px;
@@ -59,7 +56,7 @@
   &__image__container {
     display: flex;
     position: absolute;
-    top: 5%;
+    top: 20%;
     right: 10px;
     width: 20%;
     z-index: 1;
@@ -173,7 +170,6 @@ a {
   .projects__header {
     margin-bottom: 10px;
   }
-
   .card {
     width: 260px;
     height: 260px;
@@ -181,10 +177,6 @@ a {
     > img {
       width: 260px;
       height: 260px;
-    }
-
-    div {
-      font-size: 14px;
     }
   }
 }
