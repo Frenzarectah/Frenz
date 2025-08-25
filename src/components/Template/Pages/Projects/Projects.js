@@ -55,7 +55,7 @@ const Project = () =>{
                 my <a className="github" href="https://github.com/Frenzarectah">github</a> profile!<br/>
                 Stay Tuned and let me know what u think!<br/>
                 Peace!
-            </p>
+            </p><br/>
             <div className="projects__wrapper">
                 <div className="projects__cards">
                     { error 
