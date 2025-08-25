@@ -6,6 +6,9 @@ import photo from '../About/mi_star.svg'
 const About = () =>{
     return(
         <div className="about page">
+            <div className="about__photo animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
+                <img src={photo} alt="author portait"/>
+            </div>
             <div className="about__descr">
                 <p>
                     Born in '87 in the famous south-italy city called Bari, became interested in Programming
@@ -26,9 +29,6 @@ const About = () =>{
                 <p>
                     He hopes to grow without limits, discovering different languages, frameworks and so on in this wonderful world :)
                 </p>
-            </div>
-            <div className="about__photo animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
-                <img src={photo} alt="author portait"/>
             </div>
         </div>
     )
