@@ -36,6 +36,7 @@
 &__cards{
     display:flex;
     flex-direction: row;
+    min-height: 200px;
     animation: scrollText 25s linear infinite;
 }
 &__cards:hover{

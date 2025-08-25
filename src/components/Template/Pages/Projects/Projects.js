@@ -58,7 +58,11 @@ const Project = () =>{
             </p>
             <div className="projects__wrapper">
                 <div className="projects__cards">
-                    { error ? error : projList}
+                    { error 
+                        ? error 
+                        : projList.length > 0 
+                            ? projList 
+                            : <p>Loading projects...</p> }
                 </div>
             </div>
             <img alt="project baloon" 
