@@ -24,7 +24,7 @@ const About = () =>{
                     about that, anyway his heart remains frontend-cored :D
                 </p>
                 <p>
-                    He hopes to grow without limits, discovering different languages, frameworks and so on in this wonderful world :>
+                    He hopes to grow without limits, discovering different languages, frameworks and so on in this wonderful world :)
                 </p>
             </div>
             <div className="about__photo animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
