@@ -1,5 +1,5 @@
 .about{
-    position:absolute;
+    position:relative;
     padding:20px;
     height:100%;
     font-family:"Oswald";
@@ -32,11 +32,11 @@
 @media only screen and (max-width: 600px) {
 .about{
     width:100%;
-    height:100vh;
+    height:auto;
     padding:0;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-around;
     flex-direction:column-reverse;
     &__photo{
         display:flex;
@@ -44,7 +44,7 @@
     }
     &__photo img{
         width:100%;
-        margin-top:180px;
+        margin-top:0;
         height:auto;
     }
     &__descr{
@@ -55,9 +55,9 @@
 }
 @media only screen and (min-width:600) and (max-width:1400px){
     .about__photo{
-        border:1px black solid;
         display:flex;
-        margin-top:180px;
+        width:100%;
+        justify-content:space-around;
         align-items:center; 
     }
 }
