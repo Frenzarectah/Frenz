@@ -51,7 +51,7 @@ const Project = () =>{
                 Here's Frenz's Projects as a wild and free FrontEnd Dev in his way
                 to become a professionist and no longer a liar :D <br/>
                 This projects are automatically getted from GITHUB REST API, but
-                if you wanna see "behind the scenes", feel free to visit 
+                if you wanna see "behind the scenes", feel free <br/>to visit 
                 my <a className="github" href="https://github.com/Frenzarectah">github</a> profile!<br/>
                 Stay Tuned and let me know what u think!<br/>
                 Peace!
