@@ -1,6 +1,10 @@
 @keyframes scroll {
-  0%   { transform: translate(0, 0); }
-  100% { transform: translate(-40%, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-40%, 0);
+  }
 }
 
 .projects {
@@ -34,23 +38,22 @@
     width: 80%;
     min-height: 200px;
     white-space: nowrap;
-    overflow: hidden; 
+    overflow: hidden;
     box-sizing: border-box;
-
+  }
     &__cards {
       display: flex;
       flex-direction: row;
       animation: scroll 25s linear infinite;
-
+      z-index: 1;
       &:hover {
         animation-play-state: paused;
       }
-
       > * {
         flex: 0 0 auto;
         scroll-snap-align: start;
       }
-    }
+
   }
 
   &__image__container {
