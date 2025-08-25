@@ -6,8 +6,7 @@
 .projects {
   width: 100%;
   padding: 20px;
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
+  margin: 5rem 0 1.5rem 0;
   font-family: "Oswald";
   font-size: 20px;
   font-weight: bold;
@@ -27,7 +26,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px; 
+    padding: 10px;
     border: 8px solid black;
     border-radius: 10px;
     font-size: 20px;
@@ -35,18 +34,23 @@
     width: 80%;
     min-height: 200px;
     white-space: nowrap;
-    overflow: hidden; // in desktop blocco lo scroll per l'animazione
-    box-sizing: border-box;    
-  }
+    overflow: hidden; 
+    box-sizing: border-box;
 
-  &__cards {
-    display: flex;
-    flex-direction: row;
-    animation: scroll 25s linear infinite;
-  }
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      animation: scroll 25s linear infinite;
 
-  &__cards:hover {
-    animation-play-state: paused;
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      > * {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+      }
+    }
   }
 
   &__image__container {
@@ -57,10 +61,10 @@
     width: 20%;
     z-index: 1;
   }
-}
 
-.projects p {
-  font-size: 30px;
+  p {
+    font-size: 30px;
+  }
 }
 
 img {
@@ -76,34 +80,39 @@ a.github {
 
 .card {
   display: flex;
-  margin: 0px 10px;
+  margin: 0 10px;
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
   height: 300px;
-  border: 7px black solid;
+  border: 7px solid black;
   position: relative;
-}
 
-.card > img {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  z-index: -1;
-}
+  > img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+  }
 
-.card div {
-  background-color: black;
-  color: white;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
+  div {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
 }
 
 a {
   text-decoration: none;
   color: white;
+
+  &.github {
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -111,60 +120,58 @@ a {
     width: 100%;
     padding: 20px;
     font-size: 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  .projects__header {
-    font-size: 15px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    text-align: left;
-    line-height: 1.4;
-  }
+    &__header {
+      font-size: 15px;
+      margin: 40px 0 10px 0;
+      text-align: left;
+      line-height: 1.4;
+    }
 
-  .projects__wrapper {
-    width: 95%;
-    min-height: 400px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin-bottom: 20px;
-  }
+    &__wrapper {
+      width: 95%;
+      min-height: 400px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-bottom: 20px;
+    }
 
-  .projects__cards {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0.5rem;
-    scroll-snap-type: x mandatory;
-  }
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 0.5rem;
+      scroll-snap-type: x mandatory;
+      z-index: 1;
 
-  .projects__cards > * {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
+      > * {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+      }
+    }
 
-  .projects__image__container {
-    display: none;
-  }
+    &__image__container {
+      display: none;
+    }
 
-  .card {
-    width: 280px;
-    height: 280px;
-  }
+    .card {
+      width: 280px;
+      height: 280px;
 
-  .card > img {
-    width: 100%;
-    height: 100%;
-  }
+      > img {
+        width: 100%;
+        height: 100%;
+      }
 
-  .card > div {
-    font-size: 16px;
+      div {
+        font-size: 16px;
+      }
+    }
   }
 }
 
-/* Schermi bassi */
 @media only screen and (max-height: 700px) {
   .projects__header {
     margin-bottom: 10px;
@@ -173,14 +180,14 @@ a {
   .card {
     width: 260px;
     height: 260px;
-  }
 
-  .card > img {
-    width: 260px;
-    height: 260px;
-  }
+    > img {
+      width: 260px;
+      height: 260px;
+    }
 
-  .card > div {
-    font-size: 14px;
+    div {
+      font-size: 14px;
+    }
   }
 }
