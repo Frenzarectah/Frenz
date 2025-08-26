@@ -41,7 +41,7 @@ const Project = () =>{
             id={item.id} 
             key={item.id} 
             image={`/Thumbnail/${item.name}.webp`} 
-            link={item.git_url} 
+            link={item.html_url} 
             name={item.name} 
             stack={item.topics.join(" ★ ").toUpperCase()}/>
     )
