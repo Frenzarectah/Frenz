@@ -1,65 +1,41 @@
-.main_container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+.main_container{
+    width:100%;
+    margin:0;
+    padding:0;
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; 
 }
-
-/* Applica la posizione assoluta e la centratura a tutti gli stati della transizione */
-.fade-enter,
-.fade-exit,
-.fade-enter-active,
-.fade-exit-active {
-    position: absolute;
-    width: 100%;
-    /* Centra l'elemento usando left/top e un transform */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .fade-enter {
-    opacity: 0;
-    /* Sposta l'elemento fuori dallo schermo in alto per l'ingresso */
-    transform: translate(-50%, -50%) translateY(-100px);
+  opacity: 0;
+  transform: translateY(-20px);
 }
-
 .fade-enter-active {
-    opacity: 1;
-    /* Riporta l'elemento al centro */
-    transform: translate(-50%, -50%) translateY(0);
-    transition: all 1s ease;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease;
 }
 
 .fade-exit {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-
 .fade-exit-active {
-    opacity: 0;
-    /* Sposta l'elemento fuori dallo schermo in basso per l'uscita */
-    transform: translate(-50%, -50%) translateY(100px);
-    transition: all 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
 }
-
-/* Media Query per Mobile */
 @media only screen and (max-width: 600px) {
-    .main_container{
-        width:100%;
-        margin:0;
-        padding:0;
-    }
+.main_container{
+    width:100%;
+    margin:0;
+    padding:0;
 }
-
-/* Media Query per schermi con altezza ridotta */
+}
 @media only screen and (max-height:700px){
-    .main_container{
-        padding-top:20px;
-    }
+.main_container{
+    padding-top:20px;
+}
 }
