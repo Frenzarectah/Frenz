@@ -1,13 +1,12 @@
 .about {
-    position: relative;
-    padding: 20px;
-    height: 100%;
-    font-family: "Oswald";
-    font-weight: bold;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
+    width:100%;
+    padding:20px;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-family:"Oswald";
 }
 
 .about__photo {

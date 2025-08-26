@@ -8,14 +8,13 @@
 }
 
 .projects {
-  width: 100%;
-  padding: 20px;
-  margin: 5rem 0 1.5rem 0;
-  font-family: "Oswald";
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-family:"Oswald";
 
   &__header {
     width: 80%;
@@ -118,7 +117,7 @@ a {
 @media only screen and (max-width: 600px) {
   .projects {
     width: 100%;
-    padding: 20px;
+    margin-top:80px;
     flex-direction: column;
     align-items: center;
 
@@ -167,8 +166,15 @@ a {
 }
 
 @media only screen and (max-height: 700px) {
-  .projects__header {
+  .projects {
+    width: 100%;
+    margin-top:80px;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
     margin-bottom: 10px;
+    }
   }
   .card {
     width: 260px;

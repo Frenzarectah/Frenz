@@ -3,6 +3,7 @@
 .menu{
     position:absolute;
     margin:20px;
+    padding:10px;
   }
 nav ul{
     display:flex;
