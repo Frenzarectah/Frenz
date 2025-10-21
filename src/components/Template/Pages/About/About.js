@@ -28,7 +28,8 @@ const About = () =>{
                     about that, anyway his heart remains frontend-cored :D
                 </p>
                 <p>
-                    In this agency he learned a lot about backend developing, like creating and manutening REST API, using PHP and Laravel, and creating apps with Vue.js.
+                    In this agency he learned a lot about backend developing, like creating and manutening REST API, using PHP and Laravel, and creating 
+                        apps with Vue.js.
                 </p>        
                 <p>
                     He hopes to grow without limits, discovering different languages, frameworks and so on in this wonderful world :)
@@ -38,5 +39,6 @@ const About = () =>{
     )
 }
 export default About
+
 
 
