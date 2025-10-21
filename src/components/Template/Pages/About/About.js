@@ -13,7 +13,7 @@ const About = () =>{
                 <p>
                     Born in '87 in the famous southern Italian city of Bari, he has been interested in programming since he
                     was 15 years old. After finishing high school in computer science in 2006, he 
-                    tried to start a career in the web world, but unfortunately with no satisfying results.</br>
+                    tried to start a career in the web world, but unfortunately with no satisfying results.<br/>
                     Meanwhile, he starts an alternative good career into Electronic, but his heart still felt restless..     
                     <br/>In 2020 he rolled up his sleeves and restarts to learn about the
                     thousands shades of FrontEnd Development, from HTML/CSS basis to the popular Javascript library called 
@@ -38,4 +38,5 @@ const About = () =>{
     )
 }
 export default About
+
 
