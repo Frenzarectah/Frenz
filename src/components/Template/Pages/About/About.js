@@ -11,10 +11,11 @@ const About = () =>{
             </div>
             <div className="about__descr">
                 <p>
-                    Born in '87 in the famous south-italy city called Bari, became interested in Programming
-                    since he was 15y old.
-                    When he finished school in computer science, in 2006, he tried to enter in the Web World but
-                    unfortunately with no satisfying results.<br/>In 2020 he rolled up his sleeves and restarts to learn about the
+                    Born in '87 in the famous southern Italian city of Bari, he has been interested in programming since he
+                    was 15 years old. After finishing high school in computer science in 2006, he 
+                    tried to start a career in the web world, but unfortunately with no satisfying results.<br/>
+                    Meanwhile, he starts an alternative good career into Electronic, but his heart still felt restless..     
+                    <br/>In 2020 he rolled up his sleeves and restarts to learn about the
                     thousands shades of FrontEnd Development, from HTML/CSS basis to the popular Javascript library called 
                     React.js and sperimenting style frameworks as Bootstrap and TailwindCss (this last is his fav :)
                 </p>
@@ -27,6 +28,10 @@ const About = () =>{
                     about that, anyway his heart remains frontend-cored :D
                 </p>
                 <p>
+                    In this agency he learned a lot about backend developing, like creating and manutening REST API, using PHP and Laravel, and creating 
+                        apps with Vue.js.
+                </p>        
+                <p>
                     He hopes to grow without limits, discovering different languages, frameworks and so on in this wonderful world :)
                 </p>
             </div>
@@ -34,3 +39,6 @@ const About = () =>{
     )
 }
 export default About
+
+
+
